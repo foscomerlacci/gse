@@ -1,0 +1,68 @@
+from django.db import models
+from dispositivi.models import Dispositivo
+from anagrafica.models import Utente
+
+# Create your models here.
+
+
+class Intervento(models.Model):
+
+    scelte_tipo_ticket = (
+        ('incident', 'incident'),
+        ('IMAC', 'IMAC'),
+        ('change', 'change'),
+        ('move', 'move'),
+        ('altro', 'altro'),
+    )
+
+    scelte_stato_intervento = (
+        ('chiuso', 'chiuso'),
+        ('counter stop', 'counter stop'),
+        ('cancelled', 'cancelled'),
+    )
+
+    scelte_tipo_ingaggio = (
+        ('mail Coppetta', 'mail Coppetta'),
+        ('telefonata Coppetta', 'telefonata Coppetta'),
+    )
+
+    scelte_area_intervento = (
+        ('User Management', 'User Management'),
+        ('PC SW', 'PC SW'),
+        ('PC HW', 'PC HW'),
+        ('Mobile', 'Mobile'),
+        ('Messaging', 'Messaging'),
+        ('Video/Audio comunicazione', 'Video/Audio comunicazione'),
+        ('Aree condivise', 'Aree condivise'),
+        ('Backup/ripristino', 'Backup/ripristino'),
+        ('Applicativi', 'Applicativi'),
+        ('Sicurezza', 'Sicurezza'),
+        ('Informazioni/procedure', 'Informazioni/procedure'),
+        ('Printing', 'Printing'),
+        ('Move', 'Move'),
+    )
+
+
+    tecnico = models.CharField(max_length=40, null=True )
+    tipo_servizio = models.CharField(max_length=20, default="ENHANCED",)
+    richiedente = models.CharField(max_length=20, default="ROSSELLA MACCHI")
+    data_richiesta = models.DateField(null=False, blank=False)
+    data_chiusura = models.DateField(null=False, blank=False)
+    fk_beneficiario = models.ForeignKey('anagrafica.Utente', verbose_name='beneficiario', on_delete=models.CASCADE, null=False)
+    asset = models.ForeignKey('dispositivi.Dispositivo', verbose_name='dispositivo', on_delete=models.CASCADE)
+    tipo_ticket = models.CharField(max_length=30, choices=scelte_tipo_ticket, null=False, blank=False)
+    numero_ticket = models.CharField(max_length=10, null=True, blank=True)
+    area_intervento = models.CharField(max_length=30, choices=scelte_area_intervento, null=False, blank=False)
+    descrizione_richiesta = models.TextField(max_length=300, null=False, blank=False )
+    soluzione_adottata = models.TextField(max_length=300, null=False, blank=False)
+    stato_intervento = models.CharField(max_length=30, choices=scelte_stato_intervento, null=False, blank=False)
+    tipo_ingaggio = models.CharField(max_length=30, choices=scelte_tipo_ingaggio, null=False, blank=False)
+    note = models.TextField(max_length=300, null=True, blank=True )
+
+
+    def __str__(self):
+        return str(self.pk)
+        # return self.fk_beneficiario.cognome + " -- " + self.asset.asset + " -- " + self.asset.modello
+
+    class Meta:
+        verbose_name_plural = 'interventi'
