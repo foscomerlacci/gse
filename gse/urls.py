@@ -30,7 +30,7 @@ urlpatterns = [
     path('get_Asset/', interventi_views.get_Asset),
 
 
-               ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)  # qui si configura correttamente il reverse della cartella MEDIA
+               ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT) + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)  # qui si configura correttamente il reverse della cartella MEDIA
 
 urlpatterns += staticfiles_urlpatterns()    # indispensabile per i file statici serviti da gunicorn
 

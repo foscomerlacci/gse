@@ -14,7 +14,8 @@ class AllegatoAdmin(admin.TabularInline):
     form = AllegatoForm
     extra = 0
     # list_display = ['descrizione']
-    list_display = ['allegato', 'descrizione', 'datestamp']
+    readonly_fields = ['inserito_il']
+    list_display = ['allegato', 'descrizione', 'inserito_il']
 
 
 # Register your models here.
@@ -34,6 +35,7 @@ class DispositivoAdmin(admin.ModelAdmin):
     inlines = [AllegatoAdmin]
     date_hierarchy = 'data_installazione'
     ordering = ['-data_installazione']
+
 
 
     # def get_queryset(self, request):                                       # qui si fa filtro sul campo data_dismissione

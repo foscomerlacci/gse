@@ -19,6 +19,7 @@ from django.utils.html import format_html
 class DispositivoAdmin(admin.TabularInline):
 
     model = Dispositivo
+    fk_name = 'utente'
 
     def get_queryset(self, request):                                # qui si fa filtro sul campo data_dismissione
         qs = super(DispositivoAdmin, self).get_queryset(request)    # per capire se il dispositivo è radiato
@@ -32,7 +33,9 @@ class DispositivoAdmin(admin.TabularInline):
     max_num = 0  # qui si rimuove l'opzione 'aggiungi un altro' dalla visualizzazione inline
     fields = ['asset', 'location', 'tipo_dispositivo', 'seriale', 'produttore', 'modello', 'data_installazione', 'fine_garanzia',]
     readonly_fields = ['asset', 'location', 'tipo_dispositivo', 'seriale', 'produttore', 'modello', 'data_installazione', 'fine_garanzia',]
-    ordering = ['-data_installazione']
+    ordering = ['location', '-data_installazione', ]
+
+    list_display = ['asset', 'location', 'tipo_dispositivo', 'seriale', 'produttore', 'modello', 'data_installazione', 'fine_garanzia',]
 
     # def get_formset(self, request, obj=None, **kwargs):
     #     formset = super(DispositivoAdmin, self).get_formset(request, obj, **kwargs)
@@ -88,11 +91,12 @@ class UtenteAdmin(admin.ModelAdmin):
 ##############################################################################
 
     list_display = ['matricola', 'nome', 'cognome', 'divisione', 'attivo', 'ruolo', 'correlati']
+
     form = UtenteForm
     actions = None
     search_fields = ['matricola', 'nome', 'cognome', 'ruolo' ]
     list_filter = ['attivo', 'divisione', 'ruolo']
-    # list_display_links = ['cognome']
+    # list_display_links = ['matricola', 'correlati']
     # list_filter = ['ruolo', 'attivo']
     inlines = [DispositivoAdmin]
 

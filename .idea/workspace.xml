@@ -1,7 +1,450 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5f8b6993-d303-4b0a-bf3f-3daba5e7bc6c" name="Default" comment="" />
+    <list default="true" id="5f8b6993-d303-4b0a-bf3f-3daba5e7bc6c" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin.000/fonts/Roboto-Bold-webfont.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin.000/fonts/Roboto-Light-webfont.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin.000/fonts/Roboto-Regular-webfont.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin/fonts/Roboto-Bold-webfont.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin/fonts/Roboto-Light-webfont.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin/fonts/Roboto-Regular-webfont.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/ckeditor/ckeditor/skins/light/icons.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/ckeditor/ckeditor/skins/light/icons_hidpi.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/ckeditor/ckeditor/skins/light/images/arrow.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/ckeditor/ckeditor/skins/light/images/close.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/ckeditor/ckeditor/skins/light/images/hidpi/close.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/ckeditor/ckeditor/skins/light/images/hidpi/lock-open.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/ckeditor/ckeditor/skins/light/images/hidpi/lock.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/ckeditor/ckeditor/skins/light/images/hidpi/refresh.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/ckeditor/ckeditor/skins/light/images/lock-open.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/ckeditor/ckeditor/skins/light/images/lock.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/ckeditor/ckeditor/skins/light/images/refresh.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.003/admin/fonts/Roboto-Bold-webfont.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.003/admin/fonts/Roboto-Light-webfont.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.003/admin/fonts/Roboto-Regular-webfont.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.003/ckeditor/ckeditor/skins/light/icons.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.003/ckeditor/ckeditor/skins/light/icons_hidpi.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.003/ckeditor/ckeditor/skins/light/images/arrow.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.003/ckeditor/ckeditor/skins/light/images/close.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.003/ckeditor/ckeditor/skins/light/images/hidpi/close.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.003/ckeditor/ckeditor/skins/light/images/hidpi/lock-open.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.003/ckeditor/ckeditor/skins/light/images/hidpi/lock.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.003/ckeditor/ckeditor/skins/light/images/hidpi/refresh.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.003/ckeditor/ckeditor/skins/light/images/lock-open.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.003/ckeditor/ckeditor/skins/light/images/lock.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.003/ckeditor/ckeditor/skins/light/images/refresh.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin.000/css/autocomplete.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin.000/css/base.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin.000/css/changelists.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin.000/css/dashboard.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin.000/css/fonts.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin.000/css/forms.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin.000/css/login.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin.000/css/responsive.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin.000/css/responsive_rtl.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin.000/css/rtl.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin.000/css/vendor/select2/LICENSE-SELECT2.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin.000/css/vendor/select2/select2.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin.000/css/vendor/select2/select2.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin.000/css/widgets.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin.000/fonts/LICENSE.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin.000/fonts/README.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin.000/img/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin.000/img/README.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin.000/img/calendar-icons.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin.000/img/gis/move_vertex_off.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin.000/img/gis/move_vertex_on.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin.000/img/icon-addlink.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin.000/img/icon-alert.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin.000/img/icon-calendar.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin.000/img/icon-changelink.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin.000/img/icon-clock.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin.000/img/icon-deletelink.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin.000/img/icon-no.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin.000/img/icon-unknown-alt.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin.000/img/icon-unknown.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin.000/img/icon-yes.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin.000/img/inline-delete.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin.000/img/search.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin.000/img/selector-icons.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin.000/img/sorting-icons.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin.000/img/tooltag-add.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin.000/img/tooltag-arrowright.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin.000/js/SelectBox.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin.000/js/SelectFilter2.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin.000/js/actions.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin.000/js/actions.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin.000/js/admin/DateTimeShortcuts.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin.000/js/admin/RelatedObjectLookups.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin.000/js/autocomplete.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin.000/js/calendar.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin.000/js/cancel.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin.000/js/change_form.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin.000/js/collapse.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin.000/js/collapse.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin.000/js/core.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin.000/js/inlines.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin.000/js/inlines.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin.000/js/jquery.init.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin.000/js/popup_response.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin.000/js/prepopulate.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin.000/js/prepopulate.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin.000/js/prepopulate_init.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin.000/js/timeparse.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin.000/js/urlify.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin.000/js/vendor/jquery/LICENSE-JQUERY.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin.000/js/vendor/jquery/jquery.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin.000/js/vendor/jquery/jquery.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin.000/js/vendor/select2/LICENSE-SELECT2.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin.000/js/vendor/select2/i18n/ar.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin.000/js/vendor/select2/i18n/az.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin.000/js/vendor/select2/i18n/bg.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin.000/js/vendor/select2/i18n/ca.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin.000/js/vendor/select2/i18n/cs.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin.000/js/vendor/select2/i18n/da.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin.000/js/vendor/select2/i18n/de.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin.000/js/vendor/select2/i18n/el.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin.000/js/vendor/select2/i18n/en.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin.000/js/vendor/select2/i18n/es.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin.000/js/vendor/select2/i18n/et.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin.000/js/vendor/select2/i18n/eu.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin.000/js/vendor/select2/i18n/fa.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin.000/js/vendor/select2/i18n/fi.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin.000/js/vendor/select2/i18n/fr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin.000/js/vendor/select2/i18n/gl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin.000/js/vendor/select2/i18n/he.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin.000/js/vendor/select2/i18n/hi.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin.000/js/vendor/select2/i18n/hr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin.000/js/vendor/select2/i18n/hu.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin.000/js/vendor/select2/i18n/id.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin.000/js/vendor/select2/i18n/is.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin.000/js/vendor/select2/i18n/it.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin.000/js/vendor/select2/i18n/ja.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin.000/js/vendor/select2/i18n/km.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin.000/js/vendor/select2/i18n/ko.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin.000/js/vendor/select2/i18n/lt.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin.000/js/vendor/select2/i18n/lv.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin.000/js/vendor/select2/i18n/mk.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin.000/js/vendor/select2/i18n/ms.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin.000/js/vendor/select2/i18n/nb.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin.000/js/vendor/select2/i18n/nl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin.000/js/vendor/select2/i18n/pl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin.000/js/vendor/select2/i18n/pt-BR.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin.000/js/vendor/select2/i18n/pt.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin.000/js/vendor/select2/i18n/ro.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin.000/js/vendor/select2/i18n/ru.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin.000/js/vendor/select2/i18n/sk.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin.000/js/vendor/select2/i18n/sr-Cyrl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin.000/js/vendor/select2/i18n/sr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin.000/js/vendor/select2/i18n/sv.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin.000/js/vendor/select2/i18n/th.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin.000/js/vendor/select2/i18n/tr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin.000/js/vendor/select2/i18n/uk.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin.000/js/vendor/select2/i18n/vi.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin.000/js/vendor/select2/i18n/zh-CN.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin.000/js/vendor/select2/i18n/zh-TW.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin.000/js/vendor/select2/select2.full.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin.000/js/vendor/select2/select2.full.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin.000/js/vendor/xregexp/LICENSE-XREGEXP.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin.000/js/vendor/xregexp/xregexp.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin.000/js/vendor/xregexp/xregexp.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin/css/autocomplete.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin/css/base.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin/css/changelists.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin/css/dashboard.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin/css/fonts.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin/css/forms.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin/css/login.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin/css/responsive.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin/css/responsive_rtl.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin/css/rtl.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin/css/vendor/select2/LICENSE-SELECT2.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin/css/vendor/select2/select2.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin/css/vendor/select2/select2.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin/css/widgets.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin/fonts/LICENSE.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin/fonts/README.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin/img/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin/img/README.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin/img/calendar-icons.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin/img/gis/move_vertex_off.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin/img/gis/move_vertex_on.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin/img/icon-addlink.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin/img/icon-alert.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin/img/icon-calendar.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin/img/icon-changelink.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin/img/icon-clock.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin/img/icon-deletelink.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin/img/icon-no.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin/img/icon-unknown-alt.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin/img/icon-unknown.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin/img/icon-yes.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin/img/inline-delete.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin/img/search.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin/img/selector-icons.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin/img/sorting-icons.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin/img/tooltag-add.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin/img/tooltag-arrowright.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin/js/SelectBox.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin/js/SelectFilter2.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin/js/actions.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin/js/actions.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin/js/admin/DateTimeShortcuts.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin/js/admin/RelatedObjectLookups.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin/js/autocomplete.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin/js/calendar.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin/js/cancel.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin/js/change_form.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin/js/collapse.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin/js/collapse.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin/js/core.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin/js/inlines.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin/js/inlines.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin/js/jquery.init.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin/js/popup_response.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin/js/prepopulate.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin/js/prepopulate.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin/js/prepopulate_init.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin/js/timeparse.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin/js/urlify.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin/js/vendor/jquery/LICENSE-JQUERY.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin/js/vendor/jquery/jquery.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin/js/vendor/jquery/jquery.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin/js/vendor/select2/LICENSE-SELECT2.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin/js/vendor/select2/i18n/ar.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin/js/vendor/select2/i18n/az.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin/js/vendor/select2/i18n/bg.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin/js/vendor/select2/i18n/ca.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin/js/vendor/select2/i18n/cs.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin/js/vendor/select2/i18n/da.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin/js/vendor/select2/i18n/de.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin/js/vendor/select2/i18n/el.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin/js/vendor/select2/i18n/en.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin/js/vendor/select2/i18n/es.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin/js/vendor/select2/i18n/et.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin/js/vendor/select2/i18n/eu.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin/js/vendor/select2/i18n/fa.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin/js/vendor/select2/i18n/fi.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin/js/vendor/select2/i18n/fr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin/js/vendor/select2/i18n/gl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin/js/vendor/select2/i18n/he.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin/js/vendor/select2/i18n/hi.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin/js/vendor/select2/i18n/hr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin/js/vendor/select2/i18n/hu.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin/js/vendor/select2/i18n/id.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin/js/vendor/select2/i18n/is.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin/js/vendor/select2/i18n/it.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin/js/vendor/select2/i18n/ja.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin/js/vendor/select2/i18n/km.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin/js/vendor/select2/i18n/ko.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin/js/vendor/select2/i18n/lt.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin/js/vendor/select2/i18n/lv.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin/js/vendor/select2/i18n/mk.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin/js/vendor/select2/i18n/ms.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin/js/vendor/select2/i18n/nb.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin/js/vendor/select2/i18n/nl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin/js/vendor/select2/i18n/pl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin/js/vendor/select2/i18n/pt-BR.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin/js/vendor/select2/i18n/pt.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin/js/vendor/select2/i18n/ro.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin/js/vendor/select2/i18n/ru.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin/js/vendor/select2/i18n/sk.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin/js/vendor/select2/i18n/sr-Cyrl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin/js/vendor/select2/i18n/sr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin/js/vendor/select2/i18n/sv.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin/js/vendor/select2/i18n/th.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin/js/vendor/select2/i18n/tr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin/js/vendor/select2/i18n/uk.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin/js/vendor/select2/i18n/vi.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin/js/vendor/select2/i18n/zh-CN.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin/js/vendor/select2/i18n/zh-TW.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin/js/vendor/select2/select2.full.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin/js/vendor/select2/select2.full.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin/js/vendor/xregexp/LICENSE-XREGEXP.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin/js/vendor/xregexp/xregexp.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin/js/vendor/xregexp/xregexp.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin_interface/magnific-popup/jquery.magnific-popup.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin_interface/magnific-popup/magnific-popup.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/admin_interface/related-modal/related-modal.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/anagrafica_search_hints.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/ckeditor/ckeditor/skins/light/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/ckeditor/ckeditor/skins/light/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/ckeditor/ckeditor/skins/light/bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/ckeditor/ckeditor/skins/light/dialog.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/ckeditor/ckeditor/skins/light/editor.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/ckeditor/ckeditor/skins/light/editor_gecko.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/ckeditor/ckeditor/skins/light/editor_ie.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/ckeditor/ckeditor/skins/light/editor_ie7.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/ckeditor/ckeditor/skins/light/editor_ie8.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/ckeditor/ckeditor/skins/light/skin.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/colorfield/jscolor/jscolor.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/colorfield/jscolor/jscolor.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/dispositivi_search_hints.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/js/jquery.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/nascondi_segretaria.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/popola_asset.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/popola_asset.js.000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/popola_modello.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/popola_produttore.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/scelta_dispositivo.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/scelta_dispositivo.js.ok" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.002/scelta_produttore.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.003/admin/css/autocomplete.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.003/admin/css/base.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.003/admin/css/changelists.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.003/admin/css/dashboard.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.003/admin/css/fonts.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.003/admin/css/forms.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.003/admin/css/login.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.003/admin/css/responsive.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.003/admin/css/responsive_rtl.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.003/admin/css/rtl.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.003/admin/css/vendor/select2/LICENSE-SELECT2.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.003/admin/css/vendor/select2/select2.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.003/admin/css/vendor/select2/select2.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.003/admin/css/widgets.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.003/admin/fonts/LICENSE.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.003/admin/fonts/README.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.003/admin/img/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.003/admin/img/README.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.003/admin/img/calendar-icons.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.003/admin/img/gis/move_vertex_off.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.003/admin/img/gis/move_vertex_on.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.003/admin/img/icon-addlink.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.003/admin/img/icon-alert.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.003/admin/img/icon-calendar.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.003/admin/img/icon-changelink.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.003/admin/img/icon-clock.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.003/admin/img/icon-deletelink.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.003/admin/img/icon-no.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.003/admin/img/icon-unknown-alt.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.003/admin/img/icon-unknown.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.003/admin/img/icon-yes.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.003/admin/img/inline-delete.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.003/admin/img/search.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.003/admin/img/selector-icons.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.003/admin/img/sorting-icons.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.003/admin/img/tooltag-add.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.003/admin/img/tooltag-arrowright.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.003/admin/js/SelectBox.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.003/admin/js/SelectFilter2.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.003/admin/js/actions.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.003/admin/js/actions.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.003/admin/js/admin/DateTimeShortcuts.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.003/admin/js/admin/RelatedObjectLookups.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.003/admin/js/autocomplete.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.003/admin/js/calendar.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.003/admin/js/cancel.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.003/admin/js/change_form.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.003/admin/js/collapse.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.003/admin/js/collapse.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.003/admin/js/core.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.003/admin/js/inlines.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.003/admin/js/inlines.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.003/admin/js/jquery.init.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.003/admin/js/popup_response.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.003/admin/js/prepopulate.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.003/admin/js/prepopulate.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.003/admin/js/prepopulate_init.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.003/admin/js/timeparse.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.003/admin/js/urlify.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.003/admin/js/vendor/jquery/LICENSE-JQUERY.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.003/admin/js/vendor/jquery/jquery.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.003/admin/js/vendor/jquery/jquery.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.003/admin/js/vendor/select2/LICENSE-SELECT2.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.003/admin/js/vendor/select2/i18n/ar.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.003/admin/js/vendor/select2/i18n/az.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.003/admin/js/vendor/select2/i18n/bg.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.003/admin/js/vendor/select2/i18n/ca.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.003/admin/js/vendor/select2/i18n/cs.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.003/admin/js/vendor/select2/i18n/da.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.003/admin/js/vendor/select2/i18n/de.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.003/admin/js/vendor/select2/i18n/el.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.003/admin/js/vendor/select2/i18n/en.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.003/admin/js/vendor/select2/i18n/es.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.003/admin/js/vendor/select2/i18n/et.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.003/admin/js/vendor/select2/i18n/eu.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.003/admin/js/vendor/select2/i18n/fa.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.003/admin/js/vendor/select2/i18n/fi.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.003/admin/js/vendor/select2/i18n/fr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.003/admin/js/vendor/select2/i18n/gl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.003/admin/js/vendor/select2/i18n/he.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.003/admin/js/vendor/select2/i18n/hi.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.003/admin/js/vendor/select2/i18n/hr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.003/admin/js/vendor/select2/i18n/hu.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.003/admin/js/vendor/select2/i18n/id.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.003/admin/js/vendor/select2/i18n/is.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.003/admin/js/vendor/select2/i18n/it.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.003/admin/js/vendor/select2/i18n/ja.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.003/admin/js/vendor/select2/i18n/km.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.003/admin/js/vendor/select2/i18n/ko.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.003/admin/js/vendor/select2/i18n/lt.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.003/admin/js/vendor/select2/i18n/lv.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.003/admin/js/vendor/select2/i18n/mk.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.003/admin/js/vendor/select2/i18n/ms.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.003/admin/js/vendor/select2/i18n/nb.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.003/admin/js/vendor/select2/i18n/nl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.003/admin/js/vendor/select2/i18n/pl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.003/admin/js/vendor/select2/i18n/pt-BR.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.003/admin/js/vendor/select2/i18n/pt.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.003/admin/js/vendor/select2/i18n/ro.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.003/admin/js/vendor/select2/i18n/ru.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.003/admin/js/vendor/select2/i18n/sk.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.003/admin/js/vendor/select2/i18n/sr-Cyrl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.003/admin/js/vendor/select2/i18n/sr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.003/admin/js/vendor/select2/i18n/sv.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.003/admin/js/vendor/select2/i18n/th.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.003/admin/js/vendor/select2/i18n/tr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.003/admin/js/vendor/select2/i18n/uk.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.003/admin/js/vendor/select2/i18n/vi.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.003/admin/js/vendor/select2/i18n/zh-CN.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.003/admin/js/vendor/select2/i18n/zh-TW.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.003/admin/js/vendor/select2/select2.full.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.003/admin/js/vendor/select2/select2.full.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.003/admin/js/vendor/xregexp/LICENSE-XREGEXP.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.003/admin/js/vendor/xregexp/xregexp.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.003/admin/js/vendor/xregexp/xregexp.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.003/admin_interface/magnific-popup/jquery.magnific-popup.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.003/admin_interface/magnific-popup/magnific-popup.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.003/admin_interface/related-modal/related-modal.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.003/anagrafica_search_hints.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.003/ckeditor/ckeditor/skins/light/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.003/ckeditor/ckeditor/skins/light/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.003/ckeditor/ckeditor/skins/light/bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.003/ckeditor/ckeditor/skins/light/dialog.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.003/ckeditor/ckeditor/skins/light/editor.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.003/ckeditor/ckeditor/skins/light/editor_gecko.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.003/ckeditor/ckeditor/skins/light/editor_ie.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.003/ckeditor/ckeditor/skins/light/editor_ie7.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.003/ckeditor/ckeditor/skins/light/editor_ie8.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.003/ckeditor/ckeditor/skins/light/skin.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.003/colorfield/jscolor/jscolor.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.003/colorfield/jscolor/jscolor.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.003/dispositivi_search_hints.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.003/js/jquery.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.003/nascondi_segretaria.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.003/popola_asset.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.003/popola_asset.js.000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.003/popola_modello.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.003/popola_produttore.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.003/scelta_dispositivo.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.003/scelta_dispositivo.js.ok" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static.003/scelta_produttore.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gse.sqlite3" afterPath="$PROJECT_DIR$/gse.sqlite3" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/anagrafica/admin.py" afterPath="$PROJECT_DIR$/anagrafica/admin.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/anagrafica/forms.py" afterPath="$PROJECT_DIR$/anagrafica/forms.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/anagrafica/models.py" afterPath="$PROJECT_DIR$/anagrafica/models.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/anagrafica/templates/admin/anagrafica/change_form.html" afterPath="$PROJECT_DIR$/anagrafica/templates/admin/anagrafica/change_form.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dispositivi/admin.py" afterPath="$PROJECT_DIR$/dispositivi/admin.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dispositivi/forms.py" afterPath="$PROJECT_DIR$/dispositivi/forms.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gse/settings.py" afterPath="$PROJECT_DIR$/gse/settings.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gse/urls.py" afterPath="$PROJECT_DIR$/gse/urls.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/interventi/admin.py" afterPath="$PROJECT_DIR$/interventi/admin.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/admin/css/base.css" afterPath="$PROJECT_DIR$/static/admin/css/base.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/admin/base.html" afterPath="$PROJECT_DIR$/templates/admin/base.html" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -37,23 +480,28 @@
       <file leaf-file-name="admin.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dispositivi/admin.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="518">
-              <caret line="70" column="38" lean-forward="false" selection-start-line="70" selection-start-column="38" selection-end-line="70" selection-end-column="38" />
+            <state relative-caret-position="98">
+              <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
               <folding>
                 <element signature="e#0#32#0" expanded="true" />
-                <element signature="e#2882#3231#0" expanded="false" />
-                <element signature="e#3356#3696#0" expanded="false" />
+                <element signature="e#2923#3272#0" expanded="false" />
+                <element signature="e#3397#3737#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="popola_modello.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/popola_modello.js">
+      <file leaf-file-name="toolbox.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dispositivi/toolbox.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="434">
+              <caret line="33" column="24" lean-forward="false" selection-start-line="33" selection-start-column="24" selection-end-line="33" selection-end-column="24" />
+              <folding>
+                <marker date="1523630705000" expanded="true" signature="164:458" ph="select disti... dispositivi_produttore" />
+                <marker date="1523630705000" expanded="true" signature="707:754" ph="select noleg... noleggi_auto" />
+                <marker date="1523630705000" expanded="true" signature="707:1075" ph="select noleg... " />
+                <marker date="1523630705000" expanded="true" signature="810:1036" ph="select noleg... noleggi_auto" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -61,8 +509,41 @@
       <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gse/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1036">
-              <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+            <state relative-caret-position="56">
+              <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="admin.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/anagrafica/admin.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="294">
+              <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#32#0" expanded="true" />
+                <marker date="1525360022961" expanded="true" signature="2430:2823" ph="SELECT DISTI... anagrafica_utente" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/anagrafica/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="355">
+              <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dispositivi/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="453">
+              <caret line="45" column="69" lean-forward="false" selection-start-line="45" selection-start-column="69" selection-end-line="45" selection-end-column="69" />
               <folding />
             </state>
           </provider>
@@ -71,76 +552,40 @@
       <file leaf-file-name="admin.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/interventi/admin.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="17" column="28" lean-forward="false" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
+            <state relative-caret-position="126">
+              <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="forms.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dispositivi/forms.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="476">
+              <caret line="59" column="17" lean-forward="false" selection-start-line="59" selection-start-column="17" selection-end-line="59" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="change_form.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/anagrafica/templates/admin/anagrafica/change_form.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="560">
+              <caret line="58" column="0" lean-forward="false" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
               <folding>
-                <element signature="e#0#32#0" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#h1#0;n#h1#0;n#form#0;n#div#1;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="toolbox.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/interventi/toolbox.py">
+      <file leaf-file-name="change_form.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dispositivi/templates/admin/dispositivi/change_form.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
-              <caret line="61" column="60" lean-forward="false" selection-start-line="61" selection-start-column="60" selection-end-line="61" selection-end-column="60" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/interventi/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="294">
-              <caret line="21" column="55" lean-forward="false" selection-start-line="21" selection-start-column="55" selection-end-line="21" selection-end-column="55" />
-              <folding>
-                <element signature="e#0#11#0" expanded="true" />
-                <marker date="1524818849511" expanded="true" signature="262:677" ph="SELECT dispo... dispositivi_dispositivo" />
-                <marker date="1524818849511" expanded="true" signature="262:678" ph="SELECT dispo... dispositivi_dispositivo" />
-                <marker date="1524818849511" expanded="true" signature="262:680" ph="SELECT dispo... dispositivi_dispositivo" />
-                <marker date="1524818849511" expanded="true" signature="714:1179" ph="SELECT dispo... dispositivi_dispositivo" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="models.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/dispositivi/models.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="630">
-              <caret line="45" column="69" lean-forward="true" selection-start-line="45" selection-start-column="69" selection-end-line="45" selection-end-column="69" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="popola_asset.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/interventi/static/popola_asset.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="294">
-              <caret line="21" column="18" lean-forward="true" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gse/urls.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="98">
-              <caret line="7" column="17" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="req.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/req.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="224">
-              <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+            <state relative-caret-position="817">
+              <caret line="81" column="0" lean-forward="false" selection-start-line="81" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -162,6 +607,9 @@
       <find>brea</find>
     </findStrings>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -169,27 +617,31 @@
         <option value="$PROJECT_DIR$/gse/templates/admin/base_site.html" />
         <option value="$PROJECT_DIR$/dispositivi/templates/admin/dispositivi/base.html" />
         <option value="$PROJECT_DIR$/templates/admin/base_site.html" />
-        <option value="$PROJECT_DIR$/templates/admin/base.html" />
         <option value="$PROJECT_DIR$/dispositivi/static/popola_produttore.js" />
         <option value="$PROJECT_DIR$/dispositivi/urls.py" />
         <option value="$PROJECT_DIR$/interventi/urls.py" />
-        <option value="$PROJECT_DIR$/anagrafica/admin.py" />
         <option value="$PROJECT_DIR$/dispositivi/views.py" />
-        <option value="$PROJECT_DIR$/anagrafica/models.py" />
-        <option value="$PROJECT_DIR$/gse/settings.py" />
         <option value="$PROJECT_DIR$/dispositivi/static/aggiungi_allegato_hints.js" />
-        <option value="$PROJECT_DIR$/dispositivi/forms.py" />
         <option value="$PROJECT_DIR$/interventi/models.py" />
         <option value="$PROJECT_DIR$/interventi/toolbox.py" />
         <option value="$PROJECT_DIR$/dispositivi/models.py" />
         <option value="$PROJECT_DIR$/interventi/forms.py" />
-        <option value="$PROJECT_DIR$/dispositivi/admin.py" />
-        <option value="$PROJECT_DIR$/interventi/admin.py" />
         <option value="$PROJECT_DIR$/interventi/views.py" />
         <option value="$PROJECT_DIR$/static/popola_asset.js" />
         <option value="$PROJECT_DIR$/interventi/static/popola_asset.js" />
         <option value="$PROJECT_DIR$/req.txt" />
+        <option value="$PROJECT_DIR$/static/admin/static/admin/css/base.css" />
+        <option value="$PROJECT_DIR$/templates/admin/base.html" />
         <option value="$PROJECT_DIR$/gse/urls.py" />
+        <option value="$PROJECT_DIR$/static/admin/css/base.css" />
+        <option value="$PROJECT_DIR$/anagrafica/forms.py" />
+        <option value="$PROJECT_DIR$/interventi/admin.py" />
+        <option value="$PROJECT_DIR$/dispositivi/admin.py" />
+        <option value="$PROJECT_DIR$/anagrafica/admin.py" />
+        <option value="$PROJECT_DIR$/gse/settings.py" />
+        <option value="$PROJECT_DIR$/dispositivi/forms.py" />
+        <option value="$PROJECT_DIR$/anagrafica/models.py" />
+        <option value="$PROJECT_DIR$/anagrafica/templates/admin/anagrafica/change_form.html" />
       </list>
     </option>
   </component>
@@ -205,6 +657,7 @@
     <option name="width" value="1928" />
     <option name="height" value="1033" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
@@ -242,7 +695,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
+              <option name="myItemId" value="gse" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -256,7 +709,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="interventi" />
+              <option name="myItemId" value="dispositivi" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -270,14 +723,66 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="dispositivi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dispositivi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
               <option name="myItemId" value="gse" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gse" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="anagrafica" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gse" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gse" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="anagrafica" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="anagrafica" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -285,6 +790,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="SearchEverywhereHistoryKey" value="/static/&#9;FILE&#9;file:///home/utente/.virtualenvs/gse3.6/lib/python3.6/site-packages/django/contrib/admin/static&#10;popola_asset&#9;FILE&#9;file:///home/utente/PycharmProjects/gse/static/popola_asset.js&#10;static&#9;null&#9;null" />
+    <property name="run.code.analysis.last.selected.profile" value="aDefault" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -495,6 +1001,7 @@
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="gse.settings" />
       </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="" />
@@ -535,26 +1042,26 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-4" y="25" width="1928" height="1033" extended-state="6" />
-    <editor active="true" />
     <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.10330138" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296582" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32910246" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32930845" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17030568" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16986156" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969433" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286026" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2491731" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28820962" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969433" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39955848" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32910246" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32930845" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286026" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -571,36 +1078,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/gse/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/anagrafica/static/nascondi_segretaria.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dispositivi/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/anagrafica/static/nascondi_segretaria.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/anagrafica/migrations/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -623,13 +1100,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/template/admin/login.html" />
-    <entry file="file://$PROJECT_DIR$/anagrafica/templates/admin/anagrafica/change_form.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/gse/templates/admin/base_site.html" />
     <entry file="file://$PROJECT_DIR$/gse/templates.000/admin/base.html">
       <provider selected="true" editor-type-id="text-editor">
@@ -649,20 +1119,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
           <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/admin/base_site.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="499">
-          <caret line="66" column="14" lean-forward="true" selection-start-line="66" selection-start-column="14" selection-end-line="66" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/admin/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="518">
-          <caret line="85" column="24" lean-forward="true" selection-start-line="85" selection-start-column="24" selection-end-line="85" selection-end-column="24" />
         </state>
       </provider>
     </entry>
@@ -722,20 +1178,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dispositivi/templates/admin/dispositivi/change_form.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="756">
-          <caret line="81" column="0" lean-forward="false" selection-start-line="81" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dispositivi/fields.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dispositivi/static/aggiungi_allegato_hints.js" />
     <entry file="file://$PROJECT_DIR$/dispositivi/static/dispositivi_search_hints.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -744,46 +1186,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/anagrafica/forms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="546">
-          <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="43" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dispositivi/forms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1330">
-          <caret line="129" column="9" lean-forward="false" selection-start-line="129" selection-start-column="9" selection-end-line="129" selection-end-column="9" />
-          <folding>
-            <element signature="e#4219#4475#0" expanded="false" />
-            <element signature="e#4528#4808#0" expanded="false" />
-            <element signature="e#4852#5096#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/anagrafica/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="490">
-          <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/interventi/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="490">
-          <caret line="49" column="60" lean-forward="false" selection-start-line="49" selection-start-column="60" selection-end-line="49" selection-end-column="60" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/anagrafica/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -791,11 +1197,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="546">
           <caret line="46" column="145" lean-forward="false" selection-start-line="46" selection-start-column="145" selection-end-line="46" selection-end-column="145" />
-          <folding>
-            <marker date="1524225524000" expanded="true" signature="561:881" ph="SELECT DISTI... dispositivi_produttore" />
-            <marker date="1524225524000" expanded="true" signature="1439:1838" ph="SELECT DISTI... dispositivi_produttore" />
-            <marker date="1524225524000" expanded="true" signature="1439:1840" ph="SELECT DISTI... dispositivi_produttore" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -803,7 +1204,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -811,7 +1211,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -819,7 +1218,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -827,26 +1225,158 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interventi/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="21" column="20" lean-forward="false" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interventi/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="21" column="55" lean-forward="false" selection-start-line="21" selection-start-column="55" selection-end-line="21" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/popola_modello.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/popola_asset.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="8" column="74" lean-forward="false" selection-start-line="8" selection-start-column="47" selection-end-line="8" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interventi/static/popola_asset.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="21" column="18" lean-forward="false" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/req.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interventi/toolbox.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="826">
+          <caret line="61" column="60" lean-forward="false" selection-start-line="61" selection-start-column="60" selection-end-line="61" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dispositivi/fields.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/admin/css/base.css.000" />
+    <entry file="file://$PROJECT_DIR$/static/admin/css/fonts.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/admin/static/admin/css/base.css" />
+    <entry file="file://$PROJECT_DIR$/templates/admin/base_site.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="924">
+          <caret line="66" column="14" lean-forward="false" selection-start-line="66" selection-start-column="14" selection-end-line="66" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/admin/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="56">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gse/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="32" column="146" lean-forward="false" selection-start-line="32" selection-start-column="146" selection-end-line="32" selection-end-column="146" />
+          <folding>
+            <element signature="e#0#37#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/anagrafica/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="28">
+          <caret line="2" column="91" lean-forward="false" selection-start-line="2" selection-start-column="91" selection-end-line="2" selection-end-column="91" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/admin/css/base.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="14">
+          <caret line="27" column="31" lean-forward="false" selection-start-line="27" selection-start-column="31" selection-end-line="27" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interventi/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="49" column="17" lean-forward="false" selection-start-line="49" selection-start-column="4" selection-end-line="49" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interventi/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/anagrafica/admin.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-465">
-          <caret line="34" column="36" lean-forward="false" selection-start-line="34" selection-start-column="36" selection-end-line="34" selection-end-column="36" />
+        <state relative-caret-position="294">
+          <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
           <folding>
-            <marker date="1524583393039" expanded="true" signature="2255:2648" ph="SELECT DISTI... anagrafica_utente" />
+            <element signature="e#0#32#0" expanded="true" />
+            <marker date="1525360022961" expanded="true" signature="2430:2823" ph="SELECT DISTI... anagrafica_utente" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gse/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="56">
+          <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dispositivi/toolbox.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="14" column="34" lean-forward="true" selection-start-line="14" selection-start-column="34" selection-end-line="14" selection-end-column="34" />
+        <state relative-caret-position="434">
+          <caret line="33" column="24" lean-forward="false" selection-start-line="33" selection-start-column="24" selection-end-line="33" selection-end-column="24" />
           <folding>
-            <element signature="e#0#33#0" expanded="true" />
             <marker date="1523630705000" expanded="true" signature="164:458" ph="select disti... dispositivi_produttore" />
             <marker date="1523630705000" expanded="true" signature="707:754" ph="select noleg... noleggi_auto" />
             <marker date="1523630705000" expanded="true" signature="707:1075" ph="select noleg... " />
@@ -855,111 +1385,57 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/interventi/forms.py">
+    <entry file="file://$PROJECT_DIR$/dispositivi/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="21" column="20" lean-forward="false" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
+        <state relative-caret-position="453">
+          <caret line="45" column="69" lean-forward="false" selection-start-line="45" selection-start-column="69" selection-end-line="45" selection-end-column="69" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dispositivi/admin.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="518">
-          <caret line="70" column="38" lean-forward="false" selection-start-line="70" selection-start-column="38" selection-end-line="70" selection-end-column="38" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-            <element signature="e#2882#3231#0" expanded="false" />
-            <element signature="e#3356#3696#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/interventi/admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="17" column="28" lean-forward="false" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/interventi/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="21" column="55" lean-forward="false" selection-start-line="21" selection-start-column="55" selection-end-line="21" selection-end-column="55" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-            <marker date="1524818849511" expanded="true" signature="262:677" ph="SELECT dispo... dispositivi_dispositivo" />
-            <marker date="1524818849511" expanded="true" signature="262:678" ph="SELECT dispo... dispositivi_dispositivo" />
-            <marker date="1524818849511" expanded="true" signature="262:680" ph="SELECT dispo... dispositivi_dispositivo" />
-            <marker date="1524818849511" expanded="true" signature="714:1179" ph="SELECT dispo... dispositivi_dispositivo" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/popola_modello.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/popola_asset.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="8" column="74" lean-forward="false" selection-start-line="8" selection-start-column="47" selection-end-line="8" selection-end-column="74" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/interventi/static/popola_asset.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="21" column="18" lean-forward="true" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/req.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gse/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1036">
-          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gse/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="98">
-          <caret line="7" column="17" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+            <element signature="e#2923#3272#0" expanded="false" />
+            <element signature="e#3397#3737#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dispositivi/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="59" column="17" lean-forward="false" selection-start-line="59" selection-start-column="17" selection-end-line="59" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/interventi/toolbox.py">
+    <entry file="file://$PROJECT_DIR$/dispositivi/templates/admin/dispositivi/change_form.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="61" column="60" lean-forward="false" selection-start-line="61" selection-start-column="60" selection-end-line="61" selection-end-column="60" />
+        <state relative-caret-position="817">
+          <caret line="81" column="0" lean-forward="false" selection-start-line="81" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dispositivi/models.py">
+    <entry file="file://$PROJECT_DIR$/anagrafica/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="45" column="69" lean-forward="true" selection-start-line="45" selection-start-column="69" selection-end-line="45" selection-end-column="69" />
+        <state relative-caret-position="355">
+          <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/anagrafica/templates/admin/anagrafica/change_form.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="560">
+          <caret line="58" column="0" lean-forward="false" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#a#0;n#h1#0;n#h1#0;n#form#0;n#div#1;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

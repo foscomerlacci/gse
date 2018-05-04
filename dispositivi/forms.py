@@ -56,7 +56,7 @@ class DispositivoForm(forms.ModelForm):
                 'data_installazione',
                 'data_dismissione',
                 'fine_garanzia',
-                # 'utente',
+                'utente',
                 'note',
                 # 'utenti',
                 )

@@ -9,6 +9,7 @@ from .toolbox import export_xls
 class InterventoAdmin(admin.ModelAdmin):
     model = Intervento
     form = InterventoForm
+    date_hierarchy = 'data_chiusura'
 
     list_display = [
                     'id',

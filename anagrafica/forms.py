@@ -1,5 +1,6 @@
 from django import forms
 from .models import Utente
+from nameparser import HumanName  # libreria per capitalizzare nomi e cognomi in modalita' smart
 
 
 # def trova_segretarie():
@@ -11,10 +12,14 @@ class UtenteForm(forms.ModelForm):
     segretaria_associata = forms.ModelMultipleChoiceField(widget=forms.SelectMultiple(), queryset=Utente.objects.filter(ruolo='seg'), required=False)
 
     def clean_nome(self):                                   # metodo per normalizzare automaticamente l'input nella forma Xxxxxx
-        return self.cleaned_data['nome'].capitalize()
+        nome = HumanName(self.cleaned_data['nome'])
+        nome.capitalize(force=True)
+        return nome
 
     def clean_cognome(self):
-        return self.cleaned_data['cognome'].capitalize()
+        cognome = HumanName(self.cleaned_data['cognome'])
+        cognome.capitalize(force=True)
+        return cognome
 
     class Meta:
         model = Utente
