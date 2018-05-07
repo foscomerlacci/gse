@@ -14,6 +14,22 @@
     {% if LANGUAGE_BIDI %}<link rel="stylesheet" type="text/css" href="{% static "admin/css/responsive_rtl.css" %}" />{% endif %}
 {% endblock %}
 {% block blockbots %}<meta name="robots" content="NONE,NOARCHIVE" />{% endblock %}
+
+<!-- Inizio importazioni per Tooltipster -->
+<link rel="stylesheet" type="text/css" href="/static/tooltipster/dist/css/tooltipster.bundle.min.css" />
+<link rel="stylesheet" type="text/css" href="/static/tooltipster/dist/css/plugins/tooltipster/sideTip/themes/tooltipster-sideTip-borderless.min.css" />
+<link rel="stylesheet" type="text/css" href="/static/tooltipster/dist/css/plugins/tooltipster/sideTip/themes/tooltipster-sideTip-light.min.css" />
+<link rel="stylesheet" type="text/css" href="/static/tooltipster/dist/css/plugins/tooltipster/sideTip/themes/tooltipster-sideTip-noir.min.css" />
+<link rel="stylesheet" type="text/css" href="/static/tooltipster/dist/css/plugins/tooltipster/sideTip/themes/tooltipster-sideTip-punk.min.css" />
+<link rel="stylesheet" type="text/css" href="/static/tooltipster/dist/css/plugins/tooltipster/sideTip/themes/tooltipster-sideTip-shadow.min.css" />
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.10.0.min.js"></script>
+<script type="text/javascript" src="/static/tooltipster/dist/js/tooltipster.bundle.min.js"></script>
+<script type="text/javascript" src="/static/dispositivi_tooltip_init.js"></script>
+<!-- Fine importazioni per Tooltipster -->
+
+
+
 </head>
 {% load i18n %}
 

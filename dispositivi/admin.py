@@ -71,6 +71,9 @@ class DispositivoAdmin(admin.ModelAdmin):
             '/static/popola_produttore.js',
             '/static/popola_modello.js',
             '/static/popola_asset.js',
+            '/static/dispositivi_tooltip.js',
+            '/static/dispositivi_tooltip_init.js',
+            # '/static/dispositivi_tooltip_init.js',
             # '/static/aggiungi_allegato_hints.js',
 
         )

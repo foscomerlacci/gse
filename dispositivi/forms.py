@@ -25,6 +25,7 @@ class DispositivoForm(forms.ModelForm):
     tipo_dispositivo = forms.ModelChoiceField(queryset=Tipo_Dispositivo.objects.all(), )
     produttore = forms.ModelChoiceField(queryset = Produttore.objects.all(),)
     modello = forms.ModelChoiceField(queryset = Modello.objects.all(),)
+    # utente = forms.ModelChoiceField(queryset=Utente.objects.all(), )
 
 
 
@@ -90,7 +91,7 @@ class AllegatoForm(forms.ModelForm):
                                                   'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
                                                   'image/jpeg',
                                                   'application/vnd.ms-outlook'],
-                                    label= 'allegato (.doc .docx .xls .xlsx .txt .pdf .jpg  max 1 MB)')   # sovrascrivo l'etichetta del campo che fara' da intestazione
+                                    label= 'allegato')   # sovrascrivo l'etichetta del campo che fara' da intestazione
 
 
 

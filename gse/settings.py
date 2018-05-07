@@ -155,7 +155,7 @@ STATICFILES_FINDERS = ('django.contrib.staticfiles.finders.AppDirectoriesFinder'
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
-MAX_UPLOAD_SIZE = 1024000    # max uploadable = 1 MB
+MAX_UPLOAD_SIZE = 5120000    # max uploadable = 5 MB
 
 JQUERY_URL = True
 

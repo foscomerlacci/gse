@@ -1,16 +1,17 @@
 from django.db import models
 from django.utils.translation import ugettext_lazy as _
 
+
+
 # Create your models here.
 
 class Utente(models.Model):
-
     # scelte_user_type = (
     #     ('fas', 'fast'),
     #     ('enh', 'enhanced'),
     # )
     scelte_ruolo = (
-        ('dir','dirigenza'),
+        ('dir', 'dirigenza'),
         ('seg', 'segreteria'),
     )
 
@@ -25,16 +26,16 @@ class Utente(models.Model):
     # segretaria_associata = models.ManyToManyField("self", blank=True, through= 'Associazione', symmetrical=False)
     attivo = models.BooleanField(default=True)
 
+
     def __str__(self):
-        return str(self.cognome).capitalize() + " " + str(self.nome).capitalize()
-
-
+        # return str(self.cognome).capitalize() + " " + str(self.nome).capitalize()
+        return str(self.cognome) + " " + str(self.nome)
 
 
     class Meta:
-
         verbose_name_plural = 'utenti'
-        ordering = ['cognome','-attivo']
+        ordering = ['cognome', '-attivo']
+
 
 
 # class Associazione(models.Model):
@@ -45,4 +46,3 @@ class Utente(models.Model):
 #
 #     class Meta:
 #         unique_together = ('from_utente_id', 'to_utente_id')
-
