@@ -11,6 +11,8 @@ class InterventoAdmin(admin.ModelAdmin):
     form = InterventoForm
     date_hierarchy = 'data_chiusura'
 
+    search_fields = ['asset__asset', 'fk_beneficiario__cognome', 'fk_beneficiario__nome']
+
     list_display = [
                     'id',
                     'tecnico',
@@ -49,7 +51,7 @@ class InterventoAdmin(admin.ModelAdmin):
     class Media:
         js = (
             # '/static/',
-            # '/static/dispositivi_search_hints.js',
+            '/static/interventi_search_hints.js',
             # '/static/popola_produttore.js',
             '/static/popola_asset.js',
             # '/static/aggiungi_allegato_hints.js',
@@ -59,7 +61,7 @@ class InterventoAdmin(admin.ModelAdmin):
 
 
     def save_model(self, request, obj, form, add):            # override del metodo nativo per poter salvare l'utente loggato nel campo 'tecnico'
-        obj.tecnico = str(request.user)
+        obj.tecnico = str(request.user).replace(".", " ")
         super(InterventoAdmin, self).save_model(request, obj, form, add)
 
 

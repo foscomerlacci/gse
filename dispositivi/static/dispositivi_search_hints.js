@@ -6,7 +6,7 @@
 (function($) {
     $(function() {
 
-        $("#searchbar").attr('placeholder', "asset, seriale, produttore, modello")
+        $("#searchbar").attr('placeholder', "asset, seriale, produttore, modello, assegnatario")
 
     });
 })(django.jQuery);

@@ -95,16 +95,7 @@ class AllegatoForm(forms.ModelForm):
 
 
 
-class ProduttoreForm(forms.ModelForm):
 
-    def clean_produttore(self):  # metodo per normalizzare automaticamente l'input nella forma Xxxxxx
-        return self.cleaned_data['produttore'].capitalize()
-
-    class Meta:
-        model = Produttore
-        fields = (
-            'produttore',
-        )
 
 
 class Tipo_DispositivoForm(forms.ModelForm):
@@ -118,6 +109,16 @@ class Tipo_DispositivoForm(forms.ModelForm):
             'tipo_dispositivo',
         )
 
+class ProduttoreForm(forms.ModelForm):
+
+    def clean_produttore(self):  # metodo per normalizzare automaticamente l'input nella forma Xxxxxx
+        return self.cleaned_data['produttore'].capitalize()
+
+    class Meta:
+        model = Produttore
+        fields = (
+            'produttore',
+        )
 
 class ModelloForm(forms.ModelForm):
 

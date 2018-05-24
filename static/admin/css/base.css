@@ -10,7 +10,7 @@ body {
     font-size: 14px;
     font-family: "Roboto","Lucida Grande","DejaVu Sans","Bitstream Vera Sans",Verdana,Arial,sans-serif;
     color: #333;
-    background: #aaa;
+    background: #fff;
 }
 
 /* LINKS */
@@ -366,7 +366,7 @@ table thead th.sorted .sortoptions a.sortremove {
 }
 
 table thead th.sorted .sortoptions a.sortremove:after {
-    /*content: '\\';*/
+    content: '\\';
     position: absolute;
     top: -6px;
     left: 3px;

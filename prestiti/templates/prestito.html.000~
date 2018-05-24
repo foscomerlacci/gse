@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=windows-1252">
+    <title>Test</title>
+    <style>
+   	body {
+        height: 842px;
+        width: 595px;
+        /* to centre page on screen*/
+        margin-left: 0;
+        margin-right: 0;
+    	}
+     h1 {
+       text-align: center;
+     }
+
+     table {
+       border: 0.5 px solid;
+       margin: 0 0;
+       width: 100%;
+     }
+
+     td, th {
+       text-align: center;
+       border: 1px solid;
+     }
+     @page { size: A4; margin: 1cm }
+
+   </style>
+  </head>
+  <body> {% load static %}
+    <div style="text-align: center;"><img src="%7B%" static="" 'logoeni.png'=""
+        %}=""><img src="file:///home/utente/PycharmProjects/gse/prestiti/templates/LogoEni.png"
+        alt="logo" title="logo"></div>
+    {% for record in prestito %} {% endfor %}
+    <table>
+      <!--      <thead>
+       <tr>         <th>utente</th>
+         <th>dispositivo</th>         <th>tecnico consegna</th>
+         <th>inizio prestito</th>         <th>tecnico ritiro</th>
+         <th>fine prestito</th>         <th>note</th>
+       </tr>     </thead> -->
+      <tbody>
+        <tr>
+          <td>{{ record.fk_utente }}</td>
+          <td>{{ record.fk_dispositivo.asset }}</td>
+          <td>{{ record.tecnico_consegna.first_name }}</td>
+          <td>{{ record.inizio_prestito }}</td>
+          <td>{{ record.tecnico_ritiro }}</td>
+          <td>{{ record.fine_prestito }}</td>
+          <td>{{ record.note }}</td>
+          <td>
+            <div>siamo dentro al div 1 </div>
+          </td>
+          <td>
+            <div>siamo dentro al div 2 </div>
+          </td>
+          <td>
+            <div>siamo dentro al div 3 </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

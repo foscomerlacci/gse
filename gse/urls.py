@@ -5,6 +5,7 @@ from django.conf.urls.static import static
 
 from dispositivi import views as dispositivi_views
 from interventi import views as interventi_views
+from prestiti import views as prestiti_views
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns      # indispensabile per i file statici serviti da gunicorn
 # from gse.dispositivi import toolbox
 
@@ -28,6 +29,8 @@ urlpatterns = [
     path('get_Produttore/',  dispositivi_views.get_Produttore),
     path('get_Modello/', dispositivi_views.get_Modello),
     path('get_Asset/', interventi_views.get_Asset),
+    path('get_Disponibili/',  prestiti_views.get_Disponibili),
+    path('crea_pdf_prestito/', prestiti_views.crea_pdf_prestito),
 
 
                ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT) + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)  # qui si configura correttamente il reverse della cartella MEDIA

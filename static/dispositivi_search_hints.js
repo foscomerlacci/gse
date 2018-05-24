@@ -10,6 +10,3 @@
 
     });
 })(django.jQuery);
-
-
-

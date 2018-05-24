@@ -46,11 +46,13 @@ INSTALLED_APPS = (
     # 'admin_tools.menu',
     # 'admin_tools.dashboard',
     # 'mptt',
+
     'jquery',
     'requests',
     'anagrafica',
     'dispositivi',
     'interventi',
+    'prestiti',
     'admin_interface',
     # 'jet',
     # 'jet.dashboard',
@@ -61,6 +63,8 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'crequest',
+
     # 'assegnazioni',
 
     # 'filer',
@@ -75,10 +79,11 @@ MIDDLEWARE= (
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
-    # 'django.contrib.auth.middleware.SessionAuthenticationMiddleware',
+    'crequest.middleware.CrequestMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'django.middleware.security.SecurityMiddleware',
+    # 'prestiti.request_exposer.RequestExposerMiddleware',
 
 )
 
@@ -158,6 +163,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MAX_UPLOAD_SIZE = 5120000    # max uploadable = 5 MB
 
 JQUERY_URL = True
+
 
 
 THUMBNAIL_PROCESSORS = (

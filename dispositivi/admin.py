@@ -1,6 +1,8 @@
 from django.contrib import admin
 from django.conf.urls import url
 from django.shortcuts import get_object_or_404
+
+from dispositivi.toolbox import export_tracciato_xls
 from .forms import AllegatoForm, DispositivoForm
 from .models import  Dispositivo, Allegato, Tipo_Dispositivo, Produttore, Modello
 # from jet.admin import CompactInline
@@ -35,6 +37,8 @@ class DispositivoAdmin(admin.ModelAdmin):
     inlines = [AllegatoAdmin]
     date_hierarchy = 'data_installazione'
     ordering = ['-data_installazione']
+    actions = [export_tracciato_xls]
+
 
 
 
@@ -60,16 +64,16 @@ class DispositivoAdmin(admin.ModelAdmin):
     list_filter = ['location','tipo_dispositivo', ]
 
 
-    search_fields = ['asset','seriale', 'produttore__produttore', 'modello__modello', ]
+    search_fields = ['asset','seriale', 'produttore__produttore', 'modello__modello', 'utente__nome', 'utente__cognome', ]
     # search_fields = ['asset', 'seriale', 'produttore', 'modello', ]
 
 
     class Media:
         js = (
-            # '/static/',
+            '/static/popola_modello.js',
             '/static/dispositivi_search_hints.js',
             '/static/popola_produttore.js',
-            '/static/popola_modello.js',
+            '/static/popola_fk_dispositivo.js',
             '/static/popola_asset.js',
             '/static/dispositivi_tooltip.js',
             '/static/dispositivi_tooltip_init.js',
@@ -109,7 +113,10 @@ class ProduttoreAdmin(admin.ModelAdmin):
 
 class ModelloAdmin(admin.ModelAdmin):
     model = Modello
-    list_display = ['modello']
+    list_display = ['modello', 'fk_tipo_dispositivo', 'fk_produttore', 'attivo', ]
+    list_filter = ['fk_tipo_dispositivo', 'attivo', ]
+    search_fields = ['modello', 'fk_produttore__produttore']
+
 
 ####### funzione per cancellare dalla lista l'action "delete_selected" ##########
 
@@ -121,7 +128,10 @@ class ModelloAdmin(admin.ModelAdmin):
 
 #################################################################################
 
-
+    class Media:
+        js = (
+            '/static/modelli_search_hints.js',
+        )
 
 # @admin.register(Dispositivo)
 # class DispositivoAdmin(admin.ModelAdmin):
