@@ -14,6 +14,13 @@ class InterventoForm(forms.ModelForm):
 
     # tecnico = forms.HiddenInput()
 
+    def clean_data_chiusura(self):           # metodo per la validazione del campo data_chiusura
+        data_chiusura = self.cleaned_data['data_chiusura']
+
+        if data_chiusura < self.cleaned_data['data_richiesta']:
+            raise forms.ValidationError(u'la data di chiusura intervento non può essere antecedente a quella di richiesta')
+
+        return data_chiusura
 
 
     class Media:

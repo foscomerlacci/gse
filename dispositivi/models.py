@@ -1,5 +1,23 @@
 from django.db import models
+from django.core.exceptions import ValidationError
+from datetime import date
 
+today = date.today()
+
+############################################### metodi validatori ############################
+def valida_data_installazione(value):
+    if value > today:
+        raise ValidationError('la data di installazione non può essere nel futuro')
+
+def valida_data_dismissione(value):
+    if value > today:
+        raise ValidationError('la data di dismissione non può essere nel futuro')
+
+def valida_fine_garanzia(value):
+    if value < today:
+        raise ValidationError('la fine della garanzia non può essere nel passato')
+
+###############################################################################################
 
 # Create your models here.
 
@@ -31,9 +49,9 @@ class Dispositivo(models.Model):
     modello = models.ForeignKey('dispositivi.Modello', verbose_name='modello', on_delete=models.CASCADE)
     # tipo_dispositivo = models.CharField(max_length=3, choices=scelte_device, default=scelte_device[0])
     seriale = models.CharField(max_length=30, unique=True)
-    data_installazione = models.DateField()
-    data_dismissione = models.DateField(null=True, blank=True)
-    fine_garanzia = models.DateField(null=True, blank=True)
+    data_installazione = models.DateField(validators=[valida_data_installazione])
+    data_dismissione = models.DateField(null=True, blank=True, validators=[valida_data_dismissione])
+    fine_garanzia = models.DateField(null=True, blank=True, validators=[valida_fine_garanzia])
     # produttore = models.CharField(max_length=20)
     # modello = models.CharField(max_length=20)
     os = models.CharField(max_length= 15, verbose_name='O.S', null=True, blank=True)

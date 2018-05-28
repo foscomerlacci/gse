@@ -8,9 +8,17 @@ from django.db.models import signals
 from django.http import request
 from .fields import RestrictedFileField
 from django.conf import settings
-
-
 from .models import Prestito, Prestiti_Tipo_Dispositivo, Prestiti_Produttore, Prestiti_Modello, Prestiti_Dispositivo, Prestiti_Allegato
+import pytz
+from datetime import date, datetime
+# import datetime
+
+
+today = date.today()
+# now = datetime.datetime.now(pytz.timezone('Europe/Rome'))
+# now = datetime.now()
+# now = pytz.utc.localize(now)
+
 
 
 class PrestitoCreateForm(forms.ModelForm):
@@ -18,6 +26,14 @@ class PrestitoCreateForm(forms.ModelForm):
     fk_dispositivo = forms.ModelChoiceField(queryset= Prestiti_Dispositivo.objects.filter(disponibile="1").filter(data_checkout__isnull=True), label= "Dispositivo")
     tecnico_consegna = forms.ModelChoiceField(queryset=User.objects.all())
     note = forms.CharField(max_length=500, widget=forms.Textarea, required=False)
+
+    def clean_inizio_prestito(self):           # metodo per la validazione del campo inizio_prestito
+        inizio_prestito = self.cleaned_data['inizio_prestito']
+        # inizio_prestito = inizio_prestito.replace(tzinfo=None)
+        if inizio_prestito >= datetime.now():
+            raise forms.ValidationError('il prestito non può iniziare nel futuro')
+
+        return inizio_prestito
 
 
     class Media:
@@ -60,10 +76,16 @@ class PrestitoChangeForm(forms.ModelForm):
             # self.fields['tecnico_consegna'].widget = forms.HiddenInput()
             # self.fields['inizio_prestito'].widget = forms.HiddenInput()
 
-    # fk_dispositivo = forms.ModelChoiceField(queryset= Prestiti_Dispositivo.objects.filter(disponibile="1"), label= "Dispositivo")
-    # fk_dispositivo = forms.ModelChoiceField(queryset=Prestiti_Dispositivo.objects.all(),label="Dispositivo")
-    # fk_utente = forms.CharField()
         note = forms.CharField(max_length=500, widget=forms.Textarea, required=False)
+
+    def clean_fine_prestito(self):           # metodo per la validazione del campo fine_prestito
+        fine_prestito = self.cleaned_data['fine_prestito']
+        if fine_prestito <= self.cleaned_data['inizio_prestito']:
+            raise forms.ValidationError(u'la data di fine prestito non può essere antecedente alla data di inizio')
+        elif fine_prestito >= datetime.now():
+            raise forms.ValidationError('il prestito non può terminare nel futuro')
+
+        return fine_prestito
 
 
     class Media:
@@ -138,6 +160,15 @@ class Prestiti_DispositivoForm(forms.ModelForm):
     produttore = forms.ModelChoiceField(queryset = Prestiti_Produttore.objects.all(),)
     modello = forms.ModelChoiceField(queryset = Prestiti_Modello.objects.all(),)
     # utente = forms.ModelChoiceField(queryset=Utente.objects.all(), )
+
+    def clean_data_checkout(self):           # metodo per la validazione del campo data_checkout
+        data_checkout = self.cleaned_data['data_checkout']
+        if data_checkout:
+            if data_checkout < self.cleaned_data['data_checkin']:
+                raise forms.ValidationError(u'la data di checkout non può essere antecedente alla data di checkin')
+
+        return data_checkout
+
 
     class Meta:
         model = Prestiti_Dispositivo

@@ -1,3 +1,5 @@
+from datetime import datetime
+
 from django import forms
 from django.http import request
 # from django_select2.forms import ModelSelect2Widget, Select2Widget
@@ -6,7 +8,10 @@ from .fields import RestrictedFileField
 from .models import Dispositivo, Allegato, Tipo_Dispositivo, Produttore, Modello
 from anagrafica.models import Utente
 from .toolbox import produttori
+from django.core.exceptions import ValidationError
+from datetime import date
 
+today = date.today()
 
 
 class DispositivoForm(forms.ModelForm):
@@ -40,6 +45,29 @@ class DispositivoForm(forms.ModelForm):
     # produttore = forms.ModelChoiceField(queryset = Produttore.objects.all(), widget=ModelSelect2Widget(model=Produttore,dependent_fields={'tipo_dispositivo':'dispositivi_dispositivo.tipo_dispositivo_id'},))
     # produttore = forms.ModelChoiceField(queryset=Produttore.objects.all(), widget=ModelSelect2Widget(model=Produttore))
     # modello = forms.ModelChoiceField(queryset=Modello.objects.all(), widget=ModelSelect2Widget(model=Modello, search_fields=['modello__icontains'],  {'tipo_dispositivo': 'Dispositivo.tipo_dispositivo', }, ), )
+
+
+
+    def clean_data_dismissione(self):           # metodo per la validazione del campo data_dismissione
+        data_dismissione = self.cleaned_data['data_dismissione']
+        if data_dismissione:
+            if data_dismissione < self.cleaned_data['data_installazione']:
+                raise forms.ValidationError(u'la data di dismissione non può essere antecedente alla data di installazione')
+
+        return data_dismissione
+
+    # def clean_fine_garanzia(self):
+    #     fine_garanzia = self.cleaned_data['fine_garanzia']
+    #     # fine_garanzia = fine_garanzia.strftime('%Y-%m-%d %H:%M:%S')
+    #     if fine_garanzia < today:
+    #         raise forms.ValidationError(u'la data di fine garanzia non può essere precedente ad oggi.')
+    #     return fine_garanzia
+
+    # def clean_data_installazione(self):
+    #     data_installazione = self.cleaned_data['data_installazione']
+    #     if data_installazione > today:
+    #         raise forms.ValidationError(u'la data di installazione non può essere nel futuro')
+    #     return data_installazione
 
 
     class Meta:

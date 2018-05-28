@@ -11,7 +11,44 @@ from django.contrib.auth.models import User
 # from .middlewares.middlewares import  RequestMiddleware
 # from django.http import request
 # import requests
+from django.core.exceptions import ValidationError
+from datetime import date, datetime
+import datetime
+from datetime import datetime
+from django.utils import timezone as tz
+import pytz
 
+
+today = date.today()
+# now = datetime.datetime.now(pytz.timezone('Europe/Rome'))
+# now = datetime.now()
+now = tz.now()
+
+
+############################################### metodi validatori ############################
+def valida_data_checkin(value):
+    if value > today:
+        raise ValidationError('la data di checkin non può essere nel futuro')
+
+def valida_data_checkout(value):
+    if value > today:
+        raise ValidationError('la data di checkout non può essere nel futuro')
+
+def valida_fine_garanzia(value):
+    if value < today:
+        raise ValidationError('la fine della garanzia non può essere nel passato')
+
+def valida_inizio_prestito(value):
+    if value > now:
+        raise ValidationError('il prestito non può iniziare nel futuro')
+#     pass
+
+def valida_fine_prestito(value):
+    if value > now:
+        raise ValidationError('il prestito non può terminare nel futuro')
+#     pass
+
+###############################################################################################
 
 # Create your models here.
 
@@ -54,9 +91,9 @@ class Prestiti_Dispositivo(models.Model):
     modello = models.ForeignKey('prestiti.Prestiti_Modello', verbose_name='modello', on_delete=models.CASCADE)
     # tipo_dispositivo = models.CharField(max_length=3, choices=scelte_device, default=scelte_device[0])
     seriale = models.CharField(max_length=30, unique=True)
-    data_checkin = models.DateField()
-    data_checkout = models.DateField(null=True, blank=True)
-    fine_garanzia = models.DateField(null=True, blank=True)
+    data_checkin = models.DateField(validators=[valida_data_checkin])
+    data_checkout = models.DateField(null=True, blank=True, validators=[valida_data_checkout])
+    fine_garanzia = models.DateField(null=True, blank=True, validators=[valida_fine_garanzia])
     # produttore = models.CharField(max_length=20)
     # modello = models.CharField(max_length=20)
     os = models.CharField(max_length= 15, verbose_name='O.S', null=True, blank=True)
@@ -121,8 +158,8 @@ class Prestiti_Modello(models.Model):
 class Prestito(models.Model):
     fk_utente = models.ForeignKey('anagrafica.Utente', verbose_name='assegnatario', null=False, on_delete=models.CASCADE)
     fk_dispositivo = models.ForeignKey('prestiti.Prestiti_Dispositivo', verbose_name='dispositivo', null=False, on_delete=models.CASCADE)
-    inizio_prestito = models.DateTimeField(null=False, blank=False)
-    fine_prestito = models.DateTimeField(null=True, blank=True)
+    inizio_prestito = models.DateTimeField(null=False, blank=False, )
+    fine_prestito = models.DateTimeField(null=True, blank=True, )
     tecnico_consegna = models.ForeignKey(settings.AUTH_USER_MODEL, related_name='tecnico_consegna', null=False, on_delete=models.CASCADE)
     tecnico_ritiro = models.ForeignKey(settings.AUTH_USER_MODEL, related_name='tecnico_ritiro', null=True, blank=True, on_delete=models.CASCADE)
     note = models.TextField(max_length=500, null=True, blank=True)

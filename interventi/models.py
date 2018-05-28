@@ -1,8 +1,24 @@
 from django.db import models
 from dispositivi.models import Dispositivo
 from anagrafica.models import Utente
+from django.core.exceptions import ValidationError
+from datetime import date
+
+today = date.today()
 
 # Create your models here.
+
+############################################ metodi validatori ###############################
+
+def valida_data_richiesta(value):
+    if value > today:
+        raise ValidationError('la data di richiesta intervento non può essere nel futuro')
+
+def valida_data_chiusura(value):
+    if value > today:
+        raise ValidationError('la data di chiusura intervento non può essere nel futuro')
+
+################################################################################################
 
 
 class Intervento(models.Model):
@@ -46,8 +62,8 @@ class Intervento(models.Model):
     tecnico = models.CharField(max_length=40, null=True )
     tipo_servizio = models.CharField(max_length=20, default="ENHANCED",)
     richiedente = models.CharField(max_length=20, default="ROSSELLA MACCHI")
-    data_richiesta = models.DateField(null=False, blank=False)
-    data_chiusura = models.DateField(null=False, blank=False)
+    data_richiesta = models.DateField(null=False, blank=False, validators=[valida_data_richiesta])
+    data_chiusura = models.DateField(null=False, blank=False, validators=[valida_data_chiusura])
     fk_beneficiario = models.ForeignKey('anagrafica.Utente', verbose_name='beneficiario', on_delete=models.CASCADE, null=False)
     asset = models.ForeignKey('dispositivi.Dispositivo', verbose_name='dispositivo', on_delete=models.CASCADE)
     tipo_ticket = models.CharField(max_length=30, choices=scelte_tipo_ticket, null=False, blank=False)
