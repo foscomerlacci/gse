@@ -73,6 +73,10 @@ class PrestitoAdmin(admin.ModelAdmin):
             '/static/prestiti_tooltip.js',
             '/static/prestiti_tooltip_init.js',
             '/static/crea_pdf_prestito.js',
+            '/static/prestiti_popola_modello.js',
+            '/static/prestiti_popola_produttore.js',
+            '/static/prestiti_scelta_dispositivo.js',
+            '/static/scelta_produttore.js',
         )
 #
 #
@@ -118,15 +122,19 @@ class Prestiti_DispositivoAdmin(admin.ModelAdmin):
 
     class Media:
         js = (
-            '/static/popola_modello.js',
+
             '/static/dispositivi_search_hints.js',
-            '/static/popola_produttore.js',
-            '/static/popola_fk_dispositivo.js',
+
+            # '/static/popola_fk_dispositivo.js',
             '/static/popola_asset.js',
             '/static/dispositivi_tooltip.js',
             '/static/dispositivi_tooltip_init.js',
             # '/static/dispositivi_tooltip_init.js',
             # '/static/aggiungi_allegato_hints.js',
+            '/static/prestiti_scelta_produttore.js',
+            '/static/prestiti_popola_modello.js',
+            '/static/prestiti_popola_produttore.js',
+
 
         )
 

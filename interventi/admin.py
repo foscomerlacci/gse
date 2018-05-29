@@ -52,7 +52,7 @@ class InterventoAdmin(admin.ModelAdmin):
         js = (
             # '/static/',
             '/static/interventi_search_hints.js',
-            # '/static/popola_produttore.js',
+            # '/static/prestiti_popola_produttore.js',
             '/static/popola_asset.js',
             # '/static/aggiungi_allegato_hints.js',
 

@@ -8,7 +8,7 @@
             // alert(tipo);
             $.ajax({
                 type:"POST",
-                URL:'gse/dispositivi/form.py',
+                URL:'gse/dispositivi/forms.py',
                 // URL : '{% url "myapp:toolbox.py" %}',
                 data : {
                     'tipo' : tipo,
@@ -16,7 +16,7 @@
                 },
 
         });
-            alert(tipo)
+            // alert(tipo)
         });
 
     });

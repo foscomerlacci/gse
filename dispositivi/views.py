@@ -8,7 +8,7 @@ from dispositivi.models import Produttore
 from django.db import connection
 
 #
-# def get_Produttore(request):
+# def get_Prestiti_Produttore(request):
 #     id = request.GET.get('id','')
 #     result = list(Produttore.objects.filter(id=int(id)).select_related().values('id','produttore'))
 #     return HttpResponse(json.dumps(result), content_type="application/json")
@@ -41,8 +41,8 @@ def get_Modello(request):
     id_produttore = request.GET.get('id_produttore', '')
     cursor = connection.cursor()
     cursor.execute('''SELECT DISTINCT dispositivi_modello.id, dispositivi_modello.modello
-                      FROM dispositivi_produttore 
-                      JOIN dispositivi_modello
+                      FROM dispositivi_modello 
+                      JOIN dispositivi_produttore
                       ON dispositivi_modello.fk_produttore_id = dispositivi_produttore.id
                       WHERE dispositivi_modello.fk_tipo_dispositivo_id = %s AND dispositivi_modello.attivo = 1 AND dispositivi_produttore.id = %s''' % (id_tipo_dispositivo, id_produttore))
 

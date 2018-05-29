@@ -70,15 +70,20 @@ class DispositivoAdmin(admin.ModelAdmin):
 
     class Media:
         js = (
-            '/static/popola_modello.js',
+
             '/static/dispositivi_search_hints.js',
-            '/static/popola_produttore.js',
-            '/static/popola_fk_dispositivo.js',
-            '/static/popola_asset.js',
+
+            # '/static/popola_fk_dispositivo.js',
+
             '/static/dispositivi_tooltip.js',
             '/static/dispositivi_tooltip_init.js',
             # '/static/dispositivi_tooltip_init.js',
             # '/static/aggiungi_allegato_hints.js',
+            # '/static/popola_asset.js',
+            # '/static/scelta_dispositivo.js',
+            '/static/scelta_produttore.js',
+            '/static/popola_modello.js',
+            '/static/popola_produttore.js',
 
         )
 
