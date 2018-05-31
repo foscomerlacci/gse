@@ -1,6 +1,7 @@
 from django.db import models
 from django.core.exceptions import ValidationError
 from datetime import date
+from django.contrib.auth.models import User
 
 today = date.today()
 
@@ -18,6 +19,17 @@ def valida_fine_garanzia(value):
         raise ValidationError('la fine della garanzia non può essere nel passato')
 
 ###############################################################################################
+
+################################################################################################
+
+###### funzioncina fondamentale per l'override del metodo __str__ dell'AUTH_USER_MODEL  ##############
+
+def get_full_name(self):
+    return self.first_name + " " + self.last_name
+
+User.add_to_class('__str__', get_full_name)
+
+#####################################################################################################
 
 # Create your models here.
 

@@ -72,11 +72,13 @@ class PrestitoAdmin(admin.ModelAdmin):
         js = (
             '/static/prestiti_tooltip.js',
             '/static/prestiti_tooltip_init.js',
-            '/static/crea_pdf_prestito.js',
+
+            # '/static/prestiti_scelta_dispositivo.js',
+            # '/static/prestiti_scelta_produttore.js',
             '/static/prestiti_popola_modello.js',
             '/static/prestiti_popola_produttore.js',
-            '/static/prestiti_scelta_dispositivo.js',
-            '/static/scelta_produttore.js',
+
+            '/static/crea_pdf_prestito.js',
         )
 #
 #

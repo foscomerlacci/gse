@@ -3,6 +3,7 @@ from dispositivi.models import Dispositivo
 from anagrafica.models import Utente
 from django.core.exceptions import ValidationError
 from datetime import date
+from django.contrib.auth.models import User
 
 today = date.today()
 
@@ -19,6 +20,15 @@ def valida_data_chiusura(value):
         raise ValidationError('la data di chiusura intervento non può essere nel futuro')
 
 ################################################################################################
+
+###### funzioncina fondamentale per l'override del metodo __str__ dell'AUTH_USER_MODEL  ##############
+
+def get_full_name(self):
+    return self.first_name + " " + self.last_name
+
+User.add_to_class('__str__', get_full_name)
+
+#####################################################################################################
 
 
 class Intervento(models.Model):

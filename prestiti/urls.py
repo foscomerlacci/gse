@@ -20,8 +20,8 @@ urlpatterns = [
     # url(r'^select2/', include('django_select2.urls')),
     # url(r'^toolbox/',  'dispositivi.toolbox'),
     # url(r'^filer/', include('filer.urls')),
-    path('get_Prestiti_Produttore/',  views.get_Prestiti_Produttore),
-    path('get_Prestiti_Modello/', views.get_Prestiti_Modello),
+    # path('get_Prestiti_Produttore/',  views.get_Prestiti_Produttore),
+    # path('get_Prestiti_Modello/', views.get_Prestiti_Modello),
 
 
                ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)  # qui si configura correttamente il reverse della cartella MEDIA

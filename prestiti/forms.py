@@ -6,9 +6,9 @@ from django.http import HttpRequest
 from django.db import connection
 from django.db.models import signals
 from django.http import request
-from .fields import RestrictedFileField
+from prestiti.fields import RestrictedFileField
 from django.conf import settings
-from .models import Prestito, Prestiti_Tipo_Dispositivo, Prestiti_Produttore, Prestiti_Modello, Prestiti_Dispositivo, Prestiti_Allegato
+from prestiti.models import Prestito, Prestiti_Tipo_Dispositivo, Prestiti_Produttore, Prestiti_Modello, Prestiti_Dispositivo, Prestiti_Allegato
 import pytz
 from datetime import date, datetime
 # import datetime

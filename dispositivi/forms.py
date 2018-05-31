@@ -4,8 +4,8 @@ from django import forms
 from django.http import request
 # from django_select2.forms import ModelSelect2Widget, Select2Widget
 
-from .fields import RestrictedFileField
-from .models import Dispositivo, Allegato, Tipo_Dispositivo, Produttore, Modello
+from dispositivi.fields import RestrictedFileField
+from dispositivi.models import Dispositivo, Allegato, Tipo_Dispositivo, Produttore, Modello
 from anagrafica.models import Utente
 from .toolbox import produttori
 from django.core.exceptions import ValidationError

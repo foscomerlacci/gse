@@ -110,6 +110,7 @@ class Prestiti_Dispositivo(models.Model):
     class Meta:
         verbose_name = 'dispositivo'
         verbose_name_plural = 'dispositivi'
+        # app_label = 'Prestiti_Dispositivo'
 
 
 

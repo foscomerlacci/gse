@@ -3,8 +3,8 @@ from django.conf.urls import url
 from django.shortcuts import get_object_or_404
 
 from dispositivi.toolbox import export_tracciato_xls
-from .forms import AllegatoForm, DispositivoForm
-from .models import  Dispositivo, Allegato, Tipo_Dispositivo, Produttore, Modello
+from dispositivi.forms import AllegatoForm, DispositivoForm
+from dispositivi.models import  Dispositivo, Allegato, Tipo_Dispositivo, Produttore, Modello
 # from jet.admin import CompactInline
 from django.db import connection
 
@@ -72,16 +72,14 @@ class DispositivoAdmin(admin.ModelAdmin):
         js = (
 
             '/static/dispositivi_search_hints.js',
-
-            # '/static/popola_fk_dispositivo.js',
-
             '/static/dispositivi_tooltip.js',
             '/static/dispositivi_tooltip_init.js',
-            # '/static/dispositivi_tooltip_init.js',
-            # '/static/aggiungi_allegato_hints.js',
-            # '/static/popola_asset.js',
+            # # '/static/popola_fk_dispositivo.js',
+            # # '/static/dispositivi_tooltip_init.js',
+            # # '/static/aggiungi_allegato_hints.js',
+            # # '/static/popola_asset.js',
             # '/static/scelta_dispositivo.js',
-            '/static/scelta_produttore.js',
+            # '/static/scelta_produttore.js',
             '/static/popola_modello.js',
             '/static/popola_produttore.js',
 

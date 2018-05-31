@@ -52,7 +52,7 @@ INSTALLED_APPS = (
     'anagrafica',
     'dispositivi',
     'interventi',
-    'prestiti',
+
     'admin_interface',
     # 'jet',
     # 'jet.dashboard',
@@ -64,6 +64,7 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'crequest',
+    'prestiti',
 
     # 'assegnazioni',
 

@@ -6,7 +6,7 @@
 (function($) {
 // inspect html to check id of category select dropdown.
             $(document).on('change', "select#id_tipo_dispositivo", function(){
-                $.getJSON("/get_Prestiti_Produttore/",{id: $(this).val()}, function(j){
+                $.getJSON("/get_Produttore/",{id: $(this).val()}, function(j){
                      var options = '<option value="">---------</option>';
 
                      for (var i = 0; i < j.length; i++) {
