@@ -157,7 +157,7 @@ class Prestiti_Modello(models.Model):
 
 
 class Prestito(models.Model):
-    fk_utente = models.ForeignKey('anagrafica.Utente', verbose_name='assegnatario', null=False, on_delete=models.CASCADE)
+    fk_utente = models.ForeignKey('anagrafica.Utente', verbose_name='assegnatario', null=False, on_delete=models.CASCADE, limit_choices_to= {'attivo':1})
     fk_dispositivo = models.ForeignKey('prestiti.Prestiti_Dispositivo', verbose_name='dispositivo', null=False, on_delete=models.CASCADE)
     inizio_prestito = models.DateTimeField(null=False, blank=False, )
     fine_prestito = models.DateTimeField(null=True, blank=True, )

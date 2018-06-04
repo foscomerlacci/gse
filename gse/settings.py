@@ -52,8 +52,9 @@ INSTALLED_APPS = (
     'anagrafica',
     'dispositivi',
     'interventi',
-
+    # 'admin_menu',
     'admin_interface',
+
     # 'jet',
     # 'jet.dashboard',
     # 'django.contrib.auth.middleware.SessionAuthenticationMiddleware'
@@ -65,6 +66,7 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'crequest',
     'prestiti',
+
 
     # 'assegnazioni',
 
@@ -96,6 +98,7 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [os.path.join(BASE_DIR, 'templates'),
+                os.path.join(BASE_DIR, 'prestiti/templates'),
 
                  ],
         # 'DIRS':'admin_tools.template_loaders.Loader',

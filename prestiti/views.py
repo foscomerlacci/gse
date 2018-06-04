@@ -108,7 +108,7 @@ def get_Disponibili(request):
 
 
 
-def crea_pdf_prestito(request, ):
+def crea_pdf_prestito(request):
 
     prestito = Prestito.objects.raw('SELECT * FROM prestiti_prestito ORDER BY id DESC LIMIT 1') # qui si recupera l'ultimo prestito da passare alla creazione del pdf
                                                                                                 # dopo essere passati dal template html
