@@ -48,7 +48,9 @@
     </p>
     {{ adminform.form.non_field_errors }}
 {% endif %}
+{% if change %}
     <h1><a target="popup" style="color:red" href="http://rubrica.eni.it/servlet/auth/rubrica?com=S|UserController|SRC|{{adminform.form.instance.nome}}|{{adminform.form.instance.cognome}}|~|~|~|~|Roma|~&openerPar=homeRubrica" >apri rubrica Eni</a></h1>
+{% endif %}
 {% block field_sets %}
 {% for fieldset in adminform %}
   {% include "admin/includes/fieldset.html" %}
@@ -57,11 +59,13 @@
 
 {% block after_field_sets %}{% endblock %}
 
+{% if change %}
 {% block inline_field_sets %}
 {% for inline_admin_formset in inline_admin_formsets %}
     {% include inline_admin_formset.opts.template %}
 {% endfor %}
 {% endblock %}
+{% endif %}
 
 {% block after_related_objects %}{% endblock %}
 
