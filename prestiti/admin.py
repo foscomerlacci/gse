@@ -53,15 +53,17 @@ class PrestitoAdmin(admin.ModelAdmin):
 
     def add_view(self, request, form_url='', extra_context=None):
         self.form = PrestitoCreateForm
+        # self.fields = ('fk_utente', 'fk_dispositivo',('tecnico_consegna','inizio_prestito', ), 'note')
+
         return super(PrestitoAdmin, self).add_view(request, )
 
 
 
     def change_view(self, request, object_id, form_url='', extra_context=None):
         self.form = PrestitoChangeForm
+        # self.fields = ('fk_utente', 'fk_dispositivo',('tecnico_consegna','inizio_prestito', ),( 'tecnico_ritiro','fine_prestito',), 'note')
+        # self.readonly_fields = ('fk_utente', 'fk_dispositivo',('tecnico_consegna','inizio_prestito', ), )
         return super(PrestitoAdmin, self).change_view(request, object_id)
-
-
 
     # def save_model(self, request, obj, form, add):            # override del metodo nativo per poter salvare l'utente loggato nel campo 'tecnico'
     #     obj.tecnico_consegna = str(request.user).replace(".", " ")

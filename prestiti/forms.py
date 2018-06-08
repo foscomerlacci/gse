@@ -14,18 +14,36 @@ from datetime import date, datetime
 # import datetime
 
 
-today = date.today()
+# today = date.today()
 # now = datetime.datetime.now(pytz.timezone('Europe/Rome'))
 # now = datetime.now()
 # now = pytz.utc.localize(now)
 
+tecnici_disponibili= forms.ModelChoiceField(queryset=User.objects.all().exclude(username='root'))
 
 
 class PrestitoCreateForm(forms.ModelForm):
 
+    def __init__(self, *args, **kwargs):
+        super(PrestitoCreateForm, self).__init__(*args, **kwargs)
+        instance = getattr(self, 'instance', None)
+        # self.fields['tecnico_ritiro'].widget = forms.HiddenInput()
+        # self.fields['fine_prestito'].widget = forms.HiddenInput()
+        self.fields['tecnico_ritiro'].required = False
+        self.fields['fine_prestito'].required = False
+        # if instance and instance.id:
+
+            # self.fields['fk_utente'].widget = forms.HiddenInput()
+            # self.fields['fk_dispositivo'].widget = forms.HiddenInput()
+            # self.fields['tecnico_consegna'].widget = forms.HiddenInput()
+            # self.fields['inizio_prestito'].widget = forms.HiddenInput()
+
     fk_dispositivo = forms.ModelChoiceField(queryset= Prestiti_Dispositivo.objects.filter(disponibile="1").filter(data_checkout__isnull=True), label= "Dispositivo")
-    tecnico_consegna = forms.ModelChoiceField(queryset=User.objects.all())
+    tecnico_consegna = tecnici_disponibili
+
+
     note = forms.CharField(max_length=500, widget=forms.Textarea, required=False)
+
 
     def clean_inizio_prestito(self):           # metodo per la validazione del campo inizio_prestito
         inizio_prestito = self.cleaned_data['inizio_prestito']
@@ -40,6 +58,7 @@ class PrestitoCreateForm(forms.ModelForm):
         js = (
             # '/static/popola_fk_dispositivo.js',
             # '/static/popola_asset.js',
+            '/static/prestiti_hide_ritiro.js',
         )
 
 
@@ -64,6 +83,8 @@ class PrestitoCreateForm(forms.ModelForm):
 
 
 class PrestitoChangeForm(forms.ModelForm):
+
+    tecnico_ritiro = tecnici_disponibili
 
     def __init__(self, *args, **kwargs):
         super(PrestitoChangeForm, self).__init__(*args, **kwargs)
@@ -92,6 +113,7 @@ class PrestitoChangeForm(forms.ModelForm):
         js = (
             # '/static/popola_fk_dispositivo.js',
             # '/static/popola_asset.js',
+            '/static/prestiti_hide_consegna.js',
 
         )
 

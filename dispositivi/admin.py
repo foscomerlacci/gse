@@ -36,7 +36,7 @@ class DispositivoAdmin(admin.ModelAdmin):
     form = DispositivoForm
     inlines = [AllegatoAdmin]
     date_hierarchy = 'data_installazione'
-    ordering = ['-data_installazione']
+    ordering = ['location','-data_installazione']
     actions = [export_tracciato_xls]
 
 
