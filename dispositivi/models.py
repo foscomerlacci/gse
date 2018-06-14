@@ -3,19 +3,19 @@ from django.core.exceptions import ValidationError
 from datetime import date
 from django.contrib.auth.models import User
 
-today = date.today()
+# today = date.today()
 
 ############################################### metodi validatori ############################
 def valida_data_installazione(value):
-    if value > today:
+    if value > date.today():
         raise ValidationError('la data di installazione non può essere nel futuro')
 
 def valida_data_dismissione(value):
-    if value > today:
+    if value > date.today():
         raise ValidationError('la data di dismissione non può essere nel futuro')
 
 def valida_fine_garanzia(value):
-    if value < today:
+    if value < date.today():
         raise ValidationError('la fine della garanzia non può essere nel passato')
 
 ###############################################################################################

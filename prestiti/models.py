@@ -27,24 +27,24 @@ now = tz.now()
 
 ############################################### metodi validatori ############################
 def valida_data_checkin(value):
-    if value > today:
+    if value > date.today():
         raise ValidationError('la data di checkin non può essere nel futuro')
 
 def valida_data_checkout(value):
-    if value > today:
+    if value > date.today():
         raise ValidationError('la data di checkout non può essere nel futuro')
 
 def valida_fine_garanzia(value):
-    if value < today:
+    if value < date.today():
         raise ValidationError('la fine della garanzia non può essere nel passato')
 
 def valida_inizio_prestito(value):
-    if value > now:
+    if value > tz.now():
         raise ValidationError('il prestito non può iniziare nel futuro')
 #     pass
 
 def valida_fine_prestito(value):
-    if value > now:
+    if value > tz.now():
         raise ValidationError('il prestito non può terminare nel futuro')
 #     pass
 
