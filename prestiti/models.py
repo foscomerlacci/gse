@@ -19,10 +19,10 @@ from django.utils import timezone as tz
 import pytz
 
 
-today = date.today()
+# today = date.today()
 # now = datetime.datetime.now(pytz.timezone('Europe/Rome'))
 # now = datetime.now()
-now = tz.now()
+# now = tz.now()
 
 
 ############################################### metodi validatori ############################

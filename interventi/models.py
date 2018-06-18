@@ -5,18 +5,18 @@ from django.core.exceptions import ValidationError
 from datetime import date
 from django.contrib.auth.models import User
 
-today = date.today()
+# today = date.today()
 
 # Create your models here.
 
 ############################################ metodi validatori ###############################
 
 def valida_data_richiesta(value):
-    if value > today:
+    if value > date.today():
         raise ValidationError('la data di richiesta intervento non può essere nel futuro')
 
 def valida_data_chiusura(value):
-    if value > today:
+    if value > date.today():
         raise ValidationError('la data di chiusura intervento non può essere nel futuro')
 
 ################################################################################################
