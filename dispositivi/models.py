@@ -14,9 +14,9 @@ def valida_data_dismissione(value):
     if value > date.today():
         raise ValidationError('la data di dismissione non può essere nel futuro')
 
-def valida_fine_garanzia(value):
-    if value < date.today():
-        raise ValidationError('la fine della garanzia non può essere nel passato')
+# def valida_fine_garanzia(value):
+#     if value < date.today():
+#         raise ValidationError('la fine della garanzia non può essere nel passato')
 
 ###############################################################################################
 
@@ -63,7 +63,8 @@ class Dispositivo(models.Model):
     seriale = models.CharField(max_length=30, unique=True)
     data_installazione = models.DateField(validators=[valida_data_installazione])
     data_dismissione = models.DateField(null=True, blank=True, validators=[valida_data_dismissione])
-    fine_garanzia = models.DateField(null=True, blank=True, validators=[valida_fine_garanzia])
+    fine_garanzia = models.DateField(null=True, blank=True,)
+    # fine_garanzia = models.DateField(null=True, blank=True, validators=[valida_fine_garanzia])
     # produttore = models.CharField(max_length=20)
     # modello = models.CharField(max_length=20)
     os = models.CharField(max_length= 15, verbose_name='O.S', null=True, blank=True)
