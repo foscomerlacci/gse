@@ -24,6 +24,6 @@ class Migration(migrations.Migration):
         migrations.AlterField(
             model_name='dispositivo',
             name='fine_garanzia',
-            field=models.DateField(blank=True, null=True, validators=[dispositivi.models.valida_fine_garanzia]),
+            field=models.DateField(blank=True, null=True,),
         ),
     ]
