@@ -59,13 +59,13 @@
 
 {% block after_field_sets %}{% endblock %}
 
-{% if change %}
+<div id="formset" {% if add %} hidden {% endif %}>
 {% block inline_field_sets %}
 {% for inline_admin_formset in inline_admin_formsets %}
     {% include inline_admin_formset.opts.template %}
 {% endfor %}
 {% endblock %}
-{% endif %}
+</div>
 
 {% block after_related_objects %}{% endblock %}
 
