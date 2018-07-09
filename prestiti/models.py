@@ -194,6 +194,24 @@ class Prestiti_Allegato(models.Model):
         verbose_name = 'allegato'
 
 
+def agg_dopo_checkout(sender, instance, created, **kwargs):
+
+    # d = int(exposed_request.POST['fk_dispositivo'])
+    # from crequest.middleware import CrequestMiddleware
+
+    current_request = CrequestMiddleware.get_request()
+    asset = current_request.POST.__getitem__('asset')
+    checkout = current_request.POST.__getitem__('data_checkout')
+
+    cursor = connection.cursor()
+
+    if checkout == '':
+        cursor.execute('''UPDATE prestiti_prestiti_dispositivo SET disponibile = 1 WHERE prestiti_prestiti_dispositivo.asset = %s ''', [asset])
+    else:
+        cursor.execute('''UPDATE prestiti_prestiti_dispositivo SET disponibile = 0 WHERE prestiti_prestiti_dispositivo.asset = %s''',[asset])
+
+
+
 
 def agg_disponibile(sender, instance, created, **kwargs):
 
@@ -215,3 +233,4 @@ def agg_disponibile(sender, instance, created, **kwargs):
     # cursor.execute('''UPDATE prestiti_prestiti_dispositivo SET disponibile = 0 WHERE prestiti_prestiti_dispositivo.id = %s ''',[cr])
 
 signals.post_save.connect(agg_disponibile, sender = Prestito,)
+signals.post_save.connect(agg_dopo_checkout, sender = Prestiti_Dispositivo,)
