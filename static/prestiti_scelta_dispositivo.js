@@ -16,7 +16,7 @@
                 },
 
         });
-            alert(tipo)
+            //alert(tipo)
         });
 
     });
