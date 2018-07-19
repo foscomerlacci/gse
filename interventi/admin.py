@@ -54,6 +54,7 @@ class InterventoAdmin(admin.ModelAdmin):
             '/static/interventi_search_hints.js',
             # '/static/prestiti_popola_produttore.js',
             '/static/popola_asset.js',
+            '/static/cambia_beneficiario.js',
             # '/static/aggiungi_allegato_hints.js',
 
         )
