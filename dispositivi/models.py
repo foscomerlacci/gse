@@ -50,6 +50,8 @@ class Dispositivo(models.Model):
         ('Roma - Laurentina', 'Roma - Laurentina'),
         ('Roma - Mattei', 'Roma - Mattei'),
         ('Milano - SDM', 'Milano - SDM'),
+        ('Roma - Di Dono', 'Roma - Di Dono'),
+        ('Roma - Serafico', 'Roma - Serafico'),
     )
 
     asset = models.CharField(max_length=10, unique=True)
