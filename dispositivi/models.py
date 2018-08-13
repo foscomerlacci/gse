@@ -47,11 +47,12 @@ class Dispositivo(models.Model):
 
     scelte_location = (
         ('Roma - Europarco', 'Roma - Europarco'),
-        ('Roma - Laurentina', 'Roma - Laurentina'),
         ('Roma - Mattei', 'Roma - Mattei'),
-        ('Milano - SDM', 'Milano - SDM'),
         ('Roma - Di Dono', 'Roma - Di Dono'),
         ('Roma - Serafico', 'Roma - Serafico'),
+        ('Roma - Laurentina', 'Roma - Laurentina'),
+        ('Milano - SDM', 'Milano - SDM'),
+
     )
 
     asset = models.CharField(max_length=10, unique=True)
