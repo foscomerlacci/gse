@@ -14,7 +14,7 @@ class UtenteForm(forms.ModelForm):
 
     def clean_nome(self):                                   # metodo per normalizzare automaticamente l'input nella forma Xxxxxx
         nome = HumanName(self.cleaned_data['nome'])
-        nome.capitalize()
+        nome.capitalize(force=True)
         return nome
 
     def clean_cognome(self):
