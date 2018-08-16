@@ -1,11 +1,16 @@
 from django.contrib import admin
 from .models import Contatto
+from .forms import ContattoForm
 
 # Register your models here.
 
 class ContattoAdmin(admin.ModelAdmin):
+
     model = Contatto
-    # form = ContattoForm
+
+    form = ContattoForm
+
+    exclude = ('area',)
 
     search_fields = ['cognome', 'servizio',]
 
@@ -17,7 +22,6 @@ class ContattoAdmin(admin.ModelAdmin):
                     'email',
                     ]
 
-    exclude = ('area',)
 
     class Media:
         js = (
