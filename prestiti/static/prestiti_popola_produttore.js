@@ -16,6 +16,7 @@
 // inspect html to check id of subcategory select dropdown.
                      $("select#id_produttore").html(options);
                      $("select#id_modello").html('<option value="">---------</option>');
+                     $("input#id_seriale").val("");
                  });
              });
 

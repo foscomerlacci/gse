@@ -81,6 +81,7 @@ class PrestitoAdmin(admin.ModelAdmin):
             '/static/prestiti_popola_produttore.js',
 
             '/static/crea_pdf_prestito.js',
+
         )
 #
 #
@@ -138,7 +139,8 @@ class Prestiti_DispositivoAdmin(admin.ModelAdmin):
             '/static/prestiti_scelta_produttore.js',
             '/static/prestiti_popola_modello.js',
             '/static/prestiti_popola_produttore.js',
-            '/static/prestiti_hide_checkout.js'
+            '/static/prestiti_hide_checkout.js',
+            '/static/prestiti_cambia_modello.js',
 
 
         )
