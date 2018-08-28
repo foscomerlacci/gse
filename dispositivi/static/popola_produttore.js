@@ -6,6 +6,7 @@
 (function($) {
 // inspect html to check id of category select dropdown.
             $(document).on('change', "select#id_tipo_dispositivo", function(){
+
                 $.getJSON("/get_Produttore/",{id: $(this).val()}, function(j){
                      var options = '<option value="">---------</option>';
 
@@ -16,6 +17,7 @@
 // inspect html to check id of subcategory select dropdown.
                      $("select#id_produttore").html(options);
                      $("select#id_modello").html('<option value="">---------</option>');
+                     $("input#id_seriale").val("");
                  });
              });
 

@@ -83,6 +83,7 @@ class DispositivoAdmin(admin.ModelAdmin):
             '/static/popola_modello.js',
             '/static/popola_produttore.js',
             '/static/cambia_location.js',
+            '/static/cambia_modello.js',
 
         )
 
