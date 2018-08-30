@@ -50,6 +50,7 @@ class Intervento(models.Model):
     scelte_tipo_ingaggio = (
         ('mail Coppetta', 'mail Coppetta'),
         ('telefonata Coppetta', 'telefonata Coppetta'),
+        ('telefonata utente', 'telefonata utente'),
     )
 
     scelte_area_intervento = (
