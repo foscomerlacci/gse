@@ -48,7 +48,7 @@ def export_xls(modeladmin, request, queryset):
     font_style = xlwt.XFStyle()
     font_style.alignment.wrap = 1
 
-    for objects in queryset:
+    for objects in reversed(queryset):
         row_num += 1
         row = [
             objects.tecnico,
