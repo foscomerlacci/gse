@@ -50,19 +50,34 @@ def export_xls(modeladmin, request, queryset):
 
     for objects in reversed(queryset):
         row_num += 1
+
+        # qui intercetto gli eventuali campi NULL dovuti alla non scelta del dispositivo
+
+        if (objects.asset != None):
+            location = objects.asset.location
+            palazzo = objects.asset.palazzo
+            tipo_dispositivo = objects.asset.tipo_dispositivo.tipo_dispositivo
+            asset = objects.asset.asset
+        else:
+            location = ""
+            palazzo = ""
+            tipo_dispositivo = ""
+            asset = ""
+
+
         row = [
             objects.tecnico,
             objects.tipo_servizio,
             objects.fk_beneficiario.divisione,
-            objects.asset.location,
-            objects.asset.palazzo,
+            location,
+            palazzo,
             objects.richiedente,
             objects.data_richiesta.strftime('%d-%m-%Y'),
             objects.data_chiusura.strftime('%d-%m-%Y'),
             objects.fk_beneficiario.cognome,
             objects.fk_beneficiario.nome,
-            objects.asset.tipo_dispositivo.tipo_dispositivo,
-            objects.asset.asset,
+            tipo_dispositivo,
+            asset,
             objects.tipo_ticket,
             objects.numero_ticket,
             objects.area_intervento,
