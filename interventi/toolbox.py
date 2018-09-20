@@ -65,6 +65,10 @@ def export_xls(modeladmin, request, queryset):
             tipo_dispositivo = ""
             asset = ""
 
+        if (objects.datetime_ingaggio != None):
+            datetime_ingaggio = objects.datetime_ingaggio.strftime('%d-%m-%Y %H:%M:%S')
+        else:
+            datetime_ingaggio = ""
 
         row = [
             objects.tecnico,
@@ -75,7 +79,7 @@ def export_xls(modeladmin, request, queryset):
             objects.richiedente,
             objects.data_richiesta.strftime('%d-%m-%Y'),
             objects.data_chiusura.strftime('%d-%m-%Y'),
-            objects.datetime_ingaggio.strftime('%d-%m-%Y %H:%M:%S'),
+            datetime_ingaggio,
             objects.fk_beneficiario.cognome,
             objects.fk_beneficiario.nome,
             tipo_dispositivo,
