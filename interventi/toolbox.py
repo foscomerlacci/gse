@@ -62,7 +62,7 @@ def export_xls(modeladmin, request, queryset):
         else:
             location = ""
             palazzo = ""
-            tipo_dispositivo = ""
+            tipo_dispositivo = "Altro"
             asset = ""
 
         if (objects.datetime_ingaggio != None):
