@@ -27,6 +27,7 @@ class InterventoForm(forms.ModelForm):
         js = (
             # '/static/',
             '/static/popola_asset.js',
+            '/static/nascondi_datetime_ingaggio.js',
 
         )
 
@@ -46,6 +47,7 @@ class InterventoForm(forms.ModelForm):
             'descrizione_richiesta',
             'data_chiusura',
             'tipo_ingaggio',
+            'datetime_ingaggio',
             'stato_intervento',
             'soluzione_adottata',
 

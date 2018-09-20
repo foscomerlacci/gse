@@ -2,7 +2,7 @@ from django.db import models
 from dispositivi.models import Dispositivo
 from anagrafica.models import Utente
 from django.core.exceptions import ValidationError
-from datetime import date
+from datetime import date, datetime
 from django.contrib.auth.models import User
 
 # today = date.today()
@@ -18,6 +18,10 @@ def valida_data_richiesta(value):
 def valida_data_chiusura(value):
     if value > date.today():
         raise ValidationError('la data di chiusura intervento non può essere nel futuro')
+
+def valida_datetime_ingaggio(value):
+    if value > datetime.now():
+        raise ValidationError('la data/ora di ingaggio non può essere nel futuro')
 
 ################################################################################################
 
@@ -43,8 +47,10 @@ class Intervento(models.Model):
 
     scelte_stato_intervento = (
         ('chiuso', 'chiuso'),
+        ('work in progress', 'work in progress'),
+        ('pianificato', 'pianificato'),
         ('counter stop', 'counter stop'),
-        ('cancelled', 'cancelled'),
+        ('cancellato', 'cancellato'),
     )
 
     scelte_tipo_ingaggio = (
@@ -54,19 +60,21 @@ class Intervento(models.Model):
     )
 
     scelte_area_intervento = (
-        ('User Management', 'User Management'),
-        ('PC SW', 'PC SW'),
-        ('PC HW', 'PC HW'),
-        ('Mobile', 'Mobile'),
-        ('Messaging', 'Messaging'),
-        ('Video/Audio comunicazione', 'Video/Audio comunicazione'),
+        ('Applicativi', 'Applicativi'),
         ('Aree condivise', 'Aree condivise'),
         ('Backup/ripristino', 'Backup/ripristino'),
-        ('Applicativi', 'Applicativi'),
-        ('Sicurezza', 'Sicurezza'),
         ('Informazioni/procedure', 'Informazioni/procedure'),
-        ('Printing', 'Printing'),
+        ('Messaging', 'Messaging'),
+        ('Mobile', 'Mobile'),
         ('Move', 'Move'),
+        ('PC HW', 'PC HW'),
+        ('PC SW', 'PC SW'),
+        ('Printing', 'Printing'),
+        ('Sicurezza', 'Sicurezza'),
+        ('TLC', 'TLC'),
+        ('User Management', 'User Management'),
+        ('Video/Audio comunicazione', 'Video/Audio comunicazione'),
+        ('altro', 'altro'),
     )
 
 
@@ -84,6 +92,7 @@ class Intervento(models.Model):
     soluzione_adottata = models.TextField(max_length=300, null=False, blank=False)
     stato_intervento = models.CharField(max_length=30, choices=scelte_stato_intervento, null=False, blank=False)
     tipo_ingaggio = models.CharField(max_length=30, choices=scelte_tipo_ingaggio, null=False, blank=False)
+    datetime_ingaggio = models.DateTimeField(null=True, blank=True, validators=[valida_datetime_ingaggio], verbose_name='data ingaggio')
     note = models.TextField(max_length=300, null=True, blank=True )
 
 
