@@ -61,9 +61,10 @@ class InterventoAdmin(admin.ModelAdmin):
 
 
 
-    def save_model(self, request, obj, form, add):            # override del metodo nativo per poter salvare l'utente loggato nel campo 'tecnico'
-        obj.tecnico = str(request.user).replace(".", " ")
-        super(InterventoAdmin, self).save_model(request, obj, form, add)
+    def save_model(self, request, obj, form, add):            # override del metodo nativo per poter salvare l'utente loggato nel campo 'tecnico' SOLO IN FASE DI CREAZIONE INTERVENTO
+        if obj.tecnico == None:
+            obj.tecnico = str(request.user).replace(".", " ")
+            super(InterventoAdmin, self).save_model(request, obj, form, add)
 
 
 

@@ -19,7 +19,7 @@ from datetime import date, datetime
 # now = datetime.now()
 # now = pytz.utc.localize(now)
 
-tecnici_disponibili= forms.ModelChoiceField(queryset=User.objects.all().exclude(username='root'))
+tecnici_disponibili= forms.ModelChoiceField(queryset=User.objects.all().exclude(username='root').filter(is_active=True))
 
 
 class PrestitoCreateForm(forms.ModelForm):

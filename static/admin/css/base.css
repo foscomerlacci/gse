@@ -2,7 +2,7 @@
     DJANGO Admin styles
 */
 
-@import url(fonts.css);
+/*@import url(fonts.css);*/
 
 body {
     margin: 0;
@@ -366,7 +366,7 @@ table thead th.sorted .sortoptions a.sortremove {
 }
 
 table thead th.sorted .sortoptions a.sortremove:after {
-    content: '\\';
+    /*content: "\\";*/
     position: absolute;
     top: -6px;
     left: 3px;

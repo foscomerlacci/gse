@@ -54,9 +54,12 @@ class Intervento(models.Model):
     )
 
     scelte_tipo_ingaggio = (
+        ('mail enhanced', 'mail enhanced'),
         ('mail Coppetta', 'mail Coppetta'),
+        ('telefonata enhanced', 'telefonata enhanced'),
         ('telefonata Coppetta', 'telefonata Coppetta'),
         ('telefonata utente', 'telefonata utente'),
+
     )
 
     scelte_area_intervento = (
@@ -92,7 +95,7 @@ class Intervento(models.Model):
     soluzione_adottata = models.TextField(max_length=300, null=False, blank=False)
     stato_intervento = models.CharField(max_length=30, choices=scelte_stato_intervento, null=False, blank=False)
     tipo_ingaggio = models.CharField(max_length=30, choices=scelte_tipo_ingaggio, null=False, blank=False)
-    datetime_ingaggio = models.DateTimeField(null=True, blank=True, validators=[valida_datetime_ingaggio], verbose_name='data ingaggio')
+    datetime_ingaggio = models.DateTimeField(null=True, blank=True, validators=[valida_datetime_ingaggio], verbose_name='data/ora ingaggio')
     note = models.TextField(max_length=300, null=True, blank=True )
 
 

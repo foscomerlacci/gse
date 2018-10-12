@@ -34,8 +34,9 @@ def export_xls(modeladmin, request, queryset):
         (u"descrizione richiesta", 7000),
         (u"soluzione adottata", 7000),
         (u"stato intervento", 7000),
-        (u"tipo ingaggio", 7000),
         (u"note", 7000),
+        (u"tipo ingaggio", 7000),
+
     ]
 
     font_style = xlwt.XFStyle()
