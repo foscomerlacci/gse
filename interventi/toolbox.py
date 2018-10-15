@@ -91,8 +91,9 @@ def export_xls(modeladmin, request, queryset):
             objects.descrizione_richiesta,
             objects.soluzione_adottata,
             objects.stato_intervento,
-            objects.tipo_ingaggio,
             objects.note,
+            objects.tipo_ingaggio,
+
 
         ]
         for col_num in xrange(len(row)):
