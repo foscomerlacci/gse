@@ -65,6 +65,8 @@ class InterventoAdmin(admin.ModelAdmin):
         if obj.tecnico == None:
             obj.tecnico = str(request.user).replace(".", " ")
             super(InterventoAdmin, self).save_model(request, obj, form, add)
+        else:
+            super(InterventoAdmin, self).save_model(request, obj, form, add)
 
 
 
