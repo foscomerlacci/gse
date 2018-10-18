@@ -17,8 +17,10 @@ class InterventoForm(forms.ModelForm):
     def clean_data_chiusura(self):           # metodo per la validazione del campo data_chiusura
         data_chiusura = self.cleaned_data['data_chiusura']
 
-        if data_chiusura < self.cleaned_data['data_richiesta']:
-            raise forms.ValidationError(u'la data di chiusura intervento non può essere antecedente a quella di richiesta')
+        if self.cleaned_data.get('data_richiesta') is not None:   # qui si intercetta la possibile data_richiesta con valore nullo
+            data_richiesta = self.cleaned_data['data_richiesta']
+            if data_chiusura < data_richiesta:
+                raise forms.ValidationError(u'la data di chiusura intervento non può essere antecedente a quella di richiesta')
 
         return data_chiusura
 
