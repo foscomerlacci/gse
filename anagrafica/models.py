@@ -18,7 +18,7 @@ class Utente(models.Model):
     nome = models.CharField(max_length=50)
     cognome = models.CharField(max_length=50)
     matricola = models.CharField(max_length=10, unique=True)
-    utenza = models.CharField(max_length=8, unique=True)
+    utenza = models.CharField(max_length=10, unique=True)
     divisione = models.CharField(max_length=50, null=True, blank=True)
     # user_type = models.CharField(max_length=3, choices=scelte_user_type, default=scelte_user_type[1])
     ruolo = models.CharField(max_length=3, choices=scelte_ruolo, default=scelte_ruolo[0])
