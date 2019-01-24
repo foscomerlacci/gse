@@ -10,7 +10,7 @@ CONSTANTS.prefixes.remove('de','di')  # tolgo i prefissi dalla lista dei forzati
 
 class UtenteForm(forms.ModelForm):
 
-    segretaria_associata = forms.ModelMultipleChoiceField(widget=forms.SelectMultiple(), queryset=Utente.objects.filter(ruolo='seg'), required=False)
+    segretaria_associata = forms.ModelMultipleChoiceField(widget=forms.SelectMultiple(), queryset=Utente.objects.filter(ruolo='seg', attivo=True), required=False)
 
     def clean_nome(self):                                   # metodo per normalizzare automaticamente l'input nella forma Xxxxxx
         nome = HumanName(self.cleaned_data['nome'])
