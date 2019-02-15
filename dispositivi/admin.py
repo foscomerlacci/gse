@@ -5,8 +5,43 @@ from django.shortcuts import get_object_or_404
 from dispositivi.toolbox import export_tracciato_xls
 from dispositivi.forms import AllegatoForm, DispositivoForm
 from dispositivi.models import  Dispositivo, Allegato, Tipo_Dispositivo, Produttore, Modello
+from anagrafica.models import Utente
 # from jet.admin import CompactInline
 from django.db import connection
+from django.utils.translation import ugettext_lazy as _
+from django.contrib.admin import SimpleListFilter
+
+
+## qui creo il filtro personalizzato per mostrare di default solo i dispositivi in uso a utenti attivi ################
+
+class FiltroUtenteAttivo(SimpleListFilter):
+    title = _('utente')
+    parameter_name = 'utente__attivo'
+
+    def lookups(self, request, model_admin):
+        return(
+            (None, _('attivo')),
+            ('False', _('non attivo')),
+            ('tutti', _('tutti')),
+        )
+
+    def choices(self, cl):
+        for lookup, title in self.lookup_choices:
+            yield {
+                'selected': self.value() == lookup,
+                'query_string': cl.get_query_string({
+                    self.parameter_name: lookup,
+                }, []),
+                'display': title,
+            }
+
+    def queryset(self, request, queryset):
+        if self.value() is None:
+            return queryset.filter(utente__attivo=True)
+        if self.value() == 'False':
+            return  queryset.filter(utente__attivo=False)
+
+#######################################################################################################################
 
 
 
@@ -41,6 +76,25 @@ class DispositivoAdmin(admin.ModelAdmin):
 
 
 
+    # qui si trova lo stato attivo/non attivo dell'assegnatario ####################
+
+    # def attivo(self, object):
+    #     cursor = connection.cursor()
+    #     x = object.id
+    #     cursor.execute(
+    #         '''SELECT DISTINCT   anagrafica_utente.attivo
+    #             FROM anagrafica_utente
+    #             JOIN dispositivi_dispositivo
+    #             ON  dispositivi_dispositivo.utente_id = anagrafica_utente.id
+    #             WHERE dispositivi_dispositivo.id = %s''' %(x)
+    #     )
+    #     rows = cursor.fetchone()
+    #     return  rows
+
+    #################################################################################
+
+
+
 
     # def get_queryset(self, request):                                       # qui si fa filtro sul campo data_dismissione
     #     qs = super(DispositivoAdmin, self).get_queryset(request)           # per capire se il dispositivo è radiato
@@ -58,13 +112,13 @@ class DispositivoAdmin(admin.ModelAdmin):
 
 #################################################################################
 
-    # list_display = ['asset', 'tipo_dispositivo', 'produttore', 'data_installazione', 'data_dismissione', 'fine_garanzia', 'utente', 'location',]
-    list_display = ['asset', 'seriale', 'tipo_dispositivo', 'produttore', 'modello', 'data_installazione', 'data_dismissione', 'fine_garanzia', 'utente', 'location',]
+    # list_display = ['asset', 'tipo_dispositivo', 'produttore', 'data_installazione', 'data_dismissione', 'fine_garanzia', 'attivo', 'location',]
+    list_display = ['asset', 'seriale', 'tipo_dispositivo', 'produttore', 'modello', 'data_installazione', 'data_dismissione', 'fine_garanzia', 'utente', 'location', ]
 
-    list_filter = ['location','tipo_dispositivo', ]
+    list_filter = [FiltroUtenteAttivo, 'location','tipo_dispositivo', ]
 
 
-    search_fields = ['asset','seriale', 'produttore__produttore', 'modello__modello', 'utente__nome', 'utente__cognome', ]
+    search_fields = ['asset','seriale', 'produttore__produttore', 'modello__modello', 'utente__nome', 'utente__cognome',  ]
     # search_fields = ['asset', 'seriale', 'produttore', 'modello', ]
 
 

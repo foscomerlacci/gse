@@ -6,6 +6,8 @@ from .forms import UtenteForm
 from django.db import connection
 from django.urls import reverse
 from django.utils.html import format_html
+from django.utils.translation import ugettext_lazy as _
+from django.contrib.admin import SimpleListFilter
 
 
 # Register your models here.
@@ -15,6 +17,38 @@ from django.utils.html import format_html
     # fields = ['nome', 'cognome', 'ruolo']
 # class AssociazioneAdmin(admin.ModelAdmin):
 #     pass
+
+## qui creo il filtro personalizzato per mostrare di default solo i dispositivi in uso a utenti attivi ################
+
+class FiltroUtenteAttivo(SimpleListFilter):
+    title = _('utente')
+    parameter_name = 'attivo'
+
+    def lookups(self, request, model_admin):
+        return(
+            (None, _('attivo')),
+            ('False', _('non attivo')),
+            ('tutti', _('tutti')),
+        )
+
+    def choices(self, cl):
+        for lookup, title in self.lookup_choices:
+            yield {
+                'selected': self.value() == lookup,
+                'query_string': cl.get_query_string({
+                    self.parameter_name: lookup,
+                }, []),
+                'display': title,
+            }
+
+    def queryset(self, request, queryset):
+        if self.value() is None:
+            return queryset.filter(attivo=True)
+        if self.value() == 'False':
+            return  queryset.filter(attivo=False)
+
+#######################################################################################################################
+
 
 class DispositivoAdmin(admin.TabularInline):
 
@@ -48,9 +82,9 @@ class DispositivoAdmin(admin.TabularInline):
 
 class UtenteAdmin(admin.ModelAdmin):
 
-    def get_queryset(self, request):                                  # qui si fa filtro sul campo data_dismissione
-        qs = super(UtenteAdmin, self).get_queryset(request)           # per capire se il dispositivo è radiato
-        return qs.filter(attivo__isnull=False)
+    # def get_queryset(self, request):                                  # qui si fa filtro sul campo attivo
+    #     qs = super(UtenteAdmin, self).get_queryset(request)           # per capire se l'utente è attivo
+    #     return qs.filter(attivo__isnull=False)
 
 
     def correlati(self, object):
@@ -95,7 +129,8 @@ class UtenteAdmin(admin.ModelAdmin):
     form = UtenteForm
     actions = None
     search_fields = ['matricola', 'nome', 'cognome', 'ruolo' ]
-    list_filter = ['attivo', 'divisione', 'ruolo']
+    list_filter = [FiltroUtenteAttivo, 'divisione', 'ruolo']
+    ordering = ['cognome',]
     # list_display_links = ['matricola', 'correlati']
     # list_filter = ['ruolo', 'attivo']
     inlines = [DispositivoAdmin]
