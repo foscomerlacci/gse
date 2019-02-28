@@ -18,7 +18,7 @@ class Migration(migrations.Migration):
         ),
         migrations.AlterField(
             model_name='dispositivo',
-            name='utente',
+            name='attivo',
             field=models.ForeignKey(to='anagrafica.Utente', verbose_name='assegnatario', on_delete=models.CASCADE),
         ),
     ]

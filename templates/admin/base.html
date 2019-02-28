@@ -33,8 +33,14 @@
 <script type="text/javascript" src="/static/prestiti_tooltip_init.js"></script>
 <!-- Fine importazioni per Tooltipster -->
 <script type="text/javascript" src="/static/crea_pdf_prestito.js"></script>
+<!-- inizio l'importazione per HighCharts-->
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+<script src="https://code.highcharts.com/modules/export-data.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<!-- fine dell'importazione per HighCharts-->
 
-<link href="https://fonts.googleapis.com/css?family=Exo+2:200,400,600|K2D:200,400,600|Montserrat:200,400,600" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=K2D:200,400,600" rel="stylesheet">
 
 
 </head>
@@ -85,6 +91,9 @@
     <a href="{% url 'admin:index' %}">{% trans 'Home' %}</a>
     {% if title %} &rsaquo; {{ title }}{% endif %}
     </div>
+
+
+
     {% endblock %}
     {% endif %}
 
@@ -97,18 +106,23 @@
     {% endblock messages %}
 
     <!-- Content -->
+
     <div id="content" class="{% block coltype %}colM{% endblock %}">
+
+        {% block sidebar %}{% endblock %}
+
         {% block pretitle %}{% endblock %}
 {#        {% block content_title %}{% if title %}<h1>{{ title }}</h1>{% endif %}{% endblock %}#}
+
         {% block content %}
         {% block object-tools %}{% endblock %}
         {{ content }}
+
         {% endblock %}
-        {% block sidebar %}{% endblock %}
+
         <br class="clear" />
     </div>
     <!-- END Content -->
-
     {% block footer %}<div id="footer"></div>{% endblock %}
 </div>
 <!-- END Container -->

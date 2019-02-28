@@ -7,12 +7,12 @@ from django.db import models, migrations
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('anagrafica', '0004_auto_20180405_1523'),
+        ('anagrafica', '0003_auto_20180405_1412'),
     ]
 
     operations = [
         migrations.AlterModelOptions(
-            name='utente',
-            options={'ordering': ['-attivo'], 'verbose_name_plural': 'utenti'},
+            name='attivo',
+            options={'ordering': ['attivo'], 'verbose_name_plural': 'utenti'},
         ),
     ]

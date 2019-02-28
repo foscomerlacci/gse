@@ -34,7 +34,7 @@ class Migration(migrations.Migration):
                 ('modello', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='dispositivi.Modello', verbose_name='modello')),
                 ('produttore', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='dispositivi.Produttore', verbose_name='produttore')),
                 ('tipo_dispositivo', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='dispositivi.Tipo_Dispositivo', verbose_name='tipo dispositivo')),
-                ('utente', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='anagrafica.Utente', verbose_name='assegnatario')),
+                ('attivo', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='anagrafica.Utente', verbose_name='assegnatario')),
             ],
             options={
                 'verbose_name_plural': 'dispositivi',

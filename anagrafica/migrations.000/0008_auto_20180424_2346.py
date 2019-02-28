@@ -11,7 +11,7 @@ class Migration(migrations.Migration):
 
     operations = [
         migrations.AlterModelOptions(
-            name='utente',
+            name='attivo',
             options={'ordering': ['cognome', '-attivo'], 'verbose_name_plural': 'utenti'},
         ),
     ]

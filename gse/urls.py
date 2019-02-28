@@ -31,8 +31,11 @@ urlpatterns = [
     path('get_Prestiti_Produttore/',  prestiti_views.get_Prestiti_Produttore),
     path('get_Prestiti_Modello/', prestiti_views.get_Prestiti_Modello),
     path('get_Asset/', interventi_views.get_Asset),
+    path('stats/', interventi_views.stats, name='stats'),
+    path('stats/data/', interventi_views.stats_data, name='stats_data'),
     path('get_Disponibili/',  prestiti_views.get_Disponibili),
     path('crea_pdf_prestito/', prestiti_views.crea_pdf_prestito),
+
 
 
                ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT) + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)  # qui si configura correttamente il reverse della cartella MEDIA

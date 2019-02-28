@@ -40,7 +40,7 @@ class Migration(migrations.Migration):
                 ('os', models.CharField(null=True, blank=True, max_length=15)),
                 ('allegati', models.FileField(null=True, upload_to='static')),
                 ('note', models.TextField(null=True, blank=True, max_length=200)),
-                ('utente', models.ForeignKey(to='anagrafica.Utente',on_delete=models.CASCADE)),
+                ('attivo', models.ForeignKey(to='anagrafica.Utente',on_delete=models.CASCADE)),
             ],
             options={
                 'verbose_name_plural': 'dispositivi',

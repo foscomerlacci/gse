@@ -12,7 +12,7 @@ class Migration(migrations.Migration):
 
     operations = [
         migrations.AlterField(
-            model_name='utente',
+            model_name='attivo',
             name='ruolo',
             field=models.CharField(max_length=3, default=('dir', 'dirigenza'), choices=[('dir', 'dirigenza'), ('seg', 'segreteria')]),
         ),

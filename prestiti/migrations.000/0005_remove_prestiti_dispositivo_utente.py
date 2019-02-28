@@ -12,6 +12,6 @@ class Migration(migrations.Migration):
     operations = [
         migrations.RemoveField(
             model_name='prestiti_dispositivo',
-            name='utente',
+            name='attivo',
         ),
     ]
