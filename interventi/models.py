@@ -90,7 +90,7 @@ class Intervento(models.Model):
     fk_beneficiario = models.ForeignKey('anagrafica.Utente', verbose_name='beneficiario', on_delete=models.CASCADE, null=False, limit_choices_to={'attivo':True})
     asset = models.ForeignKey('dispositivi.Dispositivo', verbose_name='dispositivo', on_delete=models.CASCADE, blank=True, null=True)
     tipo_ticket = models.CharField(max_length=30, choices=scelte_tipo_ticket, null=False, blank=False)
-    numero_ticket = models.CharField(max_length=13, null=True, blank=True)
+    numero_ticket = models.CharField(max_length=15, null=True, blank=True)
     area_intervento = models.CharField(max_length=30, choices=scelte_area_intervento, null=False, blank=False)
     descrizione_richiesta = models.TextField(max_length=300, null=False, blank=False )
     soluzione_adottata = models.TextField(max_length=300, null=False, blank=False)

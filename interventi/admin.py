@@ -1,7 +1,7 @@
 from django.contrib import admin
 from .models import Intervento
 from .forms import InterventoForm
-from .toolbox import export_xls
+from .toolbox import export_xls, EXPORT4IBM
 # Register your models here.
 
 
@@ -26,6 +26,7 @@ class InterventoAdmin(admin.ModelAdmin):
                     # 'descrizione_richiesta',
                     # 'soluzione_adottata',
                     'stato_intervento',
+
                     # 'data_chiusura',
                     # 'tipo_ingaggio',
                     # 'note',
@@ -35,7 +36,7 @@ class InterventoAdmin(admin.ModelAdmin):
 
     ordering = ['-data_richiesta',]
 
-    actions = [export_xls]
+    actions = [export_xls, EXPORT4IBM]
 
 
 ####### funzione per cancellare dalla lista l'action "delete_selected" ##########
@@ -61,7 +62,7 @@ class InterventoAdmin(admin.ModelAdmin):
 
 
 
-    def save_model(self, request, obj, form, add):            # override del metodo nativo per poter salvare l'utente loggato nel campo 'tecnico' SOLO IN FASE DI CREAZIONE INTERVENTO
+    def save_model(self, request, obj, form, add):            # override del metodo nativo per poter salvare l'attivo loggato nel campo 'tecnico' SOLO IN FASE DI CREAZIONE INTERVENTO
         if obj.tecnico == None:
             obj.tecnico = str(request.user).replace(".", " ")
             super(InterventoAdmin, self).save_model(request, obj, form, add)
