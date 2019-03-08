@@ -11,7 +11,7 @@ class InterventoAdmin(admin.ModelAdmin):
     form = InterventoForm
     date_hierarchy = 'data_chiusura'
 
-    search_fields = ['asset__asset', 'fk_beneficiario__cognome', 'fk_beneficiario__nome']
+    search_fields = ['asset__asset', 'fk_beneficiario__cognome', 'fk_beneficiario__nome', 'tipo_ticket']
 
     list_display = [
                     'id',
