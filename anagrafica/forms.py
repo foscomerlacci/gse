@@ -6,7 +6,7 @@ from nameparser.config import CONSTANTS
 # def trova_segretarie():
 #     return Utente.objects.filter(ruolo='seg')
 
-CONSTANTS.prefixes.remove('de','di')  # tolgo i prefissi dalla lista dei forzati minuscoli per ottenere la capitalization corretta
+CONSTANTS.prefixes.remove('de','di', 'delli', )  # tolgo i prefissi dalla lista dei forzati minuscoli per ottenere la capitalization corretta
 
 class UtenteForm(forms.ModelForm):
 
@@ -14,7 +14,7 @@ class UtenteForm(forms.ModelForm):
 
     def clean_nome(self):                                   # metodo per normalizzare automaticamente l'input nella forma Xxxxxx
         nome = HumanName(self.cleaned_data['nome'])
-        nome.capitalize(force=True)
+        nome.capitalize()                                   # senza force=true si ottiene Macchi invece di MacChi
         return nome
 
     def clean_cognome(self):
