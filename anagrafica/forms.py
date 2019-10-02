@@ -3,23 +3,22 @@ from .models import Utente
 from nameparser import HumanName  # libreria per capitalizzare nomi e cognomi in modalita' smart
 from nameparser.config import CONSTANTS
 
-# def trova_segretarie():
-#     return Utente.objects.filter(ruolo='seg')
+CONSTANTS.prefixes.remove('de', 'di', 'delli', )  # tolgo i prefissi dalla lista dei forzati minuscoli per ottenere la capitalization corretta
 
-CONSTANTS.prefixes.remove('de','di', 'delli', )  # tolgo i prefissi dalla lista dei forzati minuscoli per ottenere la capitalization corretta
 
 class UtenteForm(forms.ModelForm):
+    segretaria_associata = forms.ModelMultipleChoiceField(widget=forms.SelectMultiple(),
+                                                          queryset=Utente.objects.filter(ruolo='seg', attivo=True),
+                                                          required=False)  # funzionante
 
-    segretaria_associata = forms.ModelMultipleChoiceField(widget=forms.SelectMultiple(), queryset=Utente.objects.filter(ruolo='seg', attivo=True), required=False)
-
-    def clean_nome(self):                                   # metodo per normalizzare automaticamente l'input nella forma Xxxxxx
+    def clean_nome(self):  # metodo per normalizzare automaticamente l'input nella forma Xxxxxx
         nome = HumanName(self.cleaned_data['nome'])
         nome.capitalize(force=True)
         return nome
 
     def clean_cognome(self):
         cognome = HumanName(self.cleaned_data['cognome'])
-        cognome.capitalize()                       # senza force=true si ottiene Macchi invece di MacChi
+        cognome.capitalize()  # senza force=true si ottiene Macchi invece di MacChi
         return cognome
 
     class Meta:

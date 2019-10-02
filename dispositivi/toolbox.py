@@ -1,17 +1,18 @@
 import xlwt
 
-from django.db  import connection
+from django.db import connection
 from django.http import HttpResponse
 from xlwt.compat import xrange
 import sys
+from PIL import Image, ExifTags
 
 
 def produttori(request):
     cursor = connection.cursor()
-    cursor.execute('''select distinct dispositivi_produttore.id, produttore 
-                      from dispositivi_produttore join dispositivi_modello
-                      on dispositivi_modello.fk_produttore_id = dispositivi_produttore.id
-                      where dispositivi_modello.fk_tipo_dispositivo_id = 7''')
+    cursor.execute('''SELECT DISTINCT dispositivi_produttore.id, produttore 
+                      FROM dispositivi_produttore JOIN dispositivi_modello
+                      ON dispositivi_modello.fk_produttore_id = dispositivi_produttore.id
+                      WHERE dispositivi_modello.fk_tipo_dispositivo_id = 7''')
     elencoproduttori = []
     rows = cursor.fetchall()
 
@@ -20,14 +21,13 @@ def produttori(request):
     return elencoproduttori
 
 
-
 def modelli(request):
     cursor = connection.cursor()
-    cursor.execute('''select noleggi_auto.id, targa from noleggi_auto
-                        except
-                        select  noleggi_auto.id, targa from noleggi_auto left join noleggi_noleggio
-                        on (noleggi_auto.id = noleggi_noleggio.fkauto_id)
-                        where datauscita is not null and dataentrata is null
+    cursor.execute('''SELECT noleggi_auto.id, targa FROM noleggi_auto
+                        EXCEPT
+                        SELECT  noleggi_auto.id, targa FROM noleggi_auto LEFT JOIN noleggi_noleggio
+                        ON (noleggi_auto.id = noleggi_noleggio.fkauto_id)
+                        WHERE datauscita IS NOT NULL AND dataentrata IS NULL
                         ORDER BY targa''')
     elencomodelli = []
     rows = cursor.fetchall()
@@ -38,7 +38,6 @@ def modelli(request):
 
 
 def export_tracciato_xls(modeladmin, request, queryset):
-
     response = HttpResponse(content_type='application/ms-excel')
     response['Content-Disposition'] = 'attachment; filename=ListaAsset.xls'
     wb = xlwt.Workbook(encoding='utf-8')
@@ -113,6 +112,9 @@ def export_tracciato_xls(modeladmin, request, queryset):
 
     wb.save(response)
     return response
+
+
+
 
 
 export_tracciato_xls.short_description = u"Export XLS"

@@ -1,0 +1,15 @@
+select id, utente_id, data_installazione from dispositivi_dispositivo
+
+select first_name, last_name from auth_user where first_name != 'root'
+
+
+
+
+scelte_tipo_ticket = ('incident', 'IMAC', 'change', 'move', 'altro',)
+
+scelte_stato_intervento = ('chiuso', 'work in progress', 'pianificato', 'counter stop','cancellato',)
+
+scelte_tipo_ingaggio = ('mail enhanced', 'mail Coppetta', 'telefonata enhanced', 'telefonata Coppetta', 'telefonata utente',)
+
+scelte_area_intervento = ('Applicativi', 'Aree condivise', 'Backup/ripristino', 'Informazioni/procedure', 'Messaging', 'Mobile', 'Move', 'PC HW', 'PC SW', 'Printing', 'Sicurezza', 'TLC', 'User Management', 'Video/Audio comunicazione', 'altro',)
+

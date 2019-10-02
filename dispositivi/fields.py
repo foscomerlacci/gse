@@ -3,6 +3,7 @@ from django.template.defaultfilters import filesizeformat
 from django.utils.translation import ugettext_lazy as _
 from django.conf import settings
 
+
 class RestrictedFileField(forms.FileField):
     def __init__(self, *args, **kwargs):
         self.content_types = kwargs.pop('content_types', None)
@@ -16,13 +17,12 @@ class RestrictedFileField(forms.FileField):
         try:
             if data.content_type in self.content_types:
                 if data.size > self.max_upload_size:
-                    raise forms.ValidationError(_("La dimensione del file deve essere minore di %s. L'attuale dimensione è %s.") % (filesizeformat(self.max_upload_size), filesizeformat(data.size)))
+                    raise forms.ValidationError(
+                        _("La dimensione del file deve essere minore di %s. L'attuale dimensione è %s.") % (
+                        filesizeformat(self.max_upload_size), filesizeformat(data.size)))
             else:
                 raise forms.ValidationError(_('Il tipo di file (%s) non è supportato.') % data.content_type)
         except AttributeError:
             pass
 
         return data
-
-
-

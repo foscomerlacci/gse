@@ -4,7 +4,7 @@ from django.shortcuts import get_object_or_404
 
 from dispositivi.toolbox import export_tracciato_xls
 from dispositivi.forms import AllegatoForm, DispositivoForm
-from dispositivi.models import  Dispositivo, Allegato, Tipo_Dispositivo, Produttore, Modello
+from dispositivi.models import Dispositivo, Allegato, Tipo_Dispositivo, Produttore, Modello
 from anagrafica.models import Utente
 # from jet.admin import CompactInline
 from django.db import connection
@@ -19,7 +19,7 @@ class FiltroUtenteAttivo(SimpleListFilter):
     parameter_name = 'utente__attivo'
 
     def lookups(self, request, model_admin):
-        return(
+        return (
             (None, _('attivo')),
             ('False', _('non attivo')),
             ('tutti', _('tutti')),
@@ -39,7 +39,8 @@ class FiltroUtenteAttivo(SimpleListFilter):
         if self.value() is None:
             return queryset.filter(utente__attivo=True)
         if self.value() == 'False':
-            return  queryset.filter(utente__attivo=False)
+            return queryset.filter(utente__attivo=False)
+
 
 #######################################################################################################################
 
@@ -64,17 +65,16 @@ class AllegatoAdmin(admin.TabularInline):
 
 
 class DispositivoAdmin(admin.ModelAdmin):
-
     # def __init__(self):
 
 
     form = DispositivoForm
     inlines = [AllegatoAdmin]
     date_hierarchy = 'data_installazione'
-    ordering = ['location','-data_installazione']
+    ordering = ['location', '-data_installazione']
     actions = [export_tracciato_xls]
 
-
+    autocomplete_fields = ['utente']
 
     # qui si trova lo stato attivo/non attivo dell'assegnatario ####################
 
@@ -102,7 +102,7 @@ class DispositivoAdmin(admin.ModelAdmin):
 
 
 
-####### funzione per cancellare dalla lista l'action "delete_selected" ##########
+    ####### funzione per cancellare dalla lista l'action "delete_selected" ##########
 
     def get_actions(self, request):
         actions = super(DispositivoAdmin, self).get_actions(request)
@@ -110,15 +110,17 @@ class DispositivoAdmin(admin.ModelAdmin):
             del actions['delete_selected']
         return actions
 
-#################################################################################
+    #################################################################################
 
     # list_display = ['asset', 'tipo_dispositivo', 'produttore', 'data_installazione', 'data_dismissione', 'fine_garanzia', 'attivo', 'location',]
-    list_display = ['asset', 'seriale', 'tipo_dispositivo', 'produttore', 'modello', 'data_installazione', 'data_dismissione', 'fine_garanzia', 'utente', 'location', ]
+    list_display = ['asset', 'seriale', 'tipo_dispositivo', 'produttore', 'modello', 'data_installazione',
+                    'data_dismissione', 'fine_garanzia', 'utente', 'location', ]
 
-    list_filter = [FiltroUtenteAttivo, 'location','tipo_dispositivo', ]
+    list_filter = [FiltroUtenteAttivo, 'location', 'tipo_dispositivo', ]
 
+    search_fields = ['asset', 'seriale', 'produttore__produttore', 'modello__modello', 'utente__nome',
+                     'utente__cognome', ]
 
-    search_fields = ['asset','seriale', 'produttore__produttore', 'modello__modello', 'utente__nome', 'utente__cognome',  ]
     # search_fields = ['asset', 'seriale', 'produttore', 'modello', ]
 
 
@@ -138,6 +140,10 @@ class DispositivoAdmin(admin.ModelAdmin):
             '/static/popola_produttore.js',
             '/static/cambia_location.js',
             '/static/cambia_modello.js',
+            '/static/double_click_prevent_input.default.js',
+            '/static/double_click_prevent_input_continue.js',
+            '/static/double_click_prevent_input_addanother.js',
+            '/static/js/notifIt.js',
 
         )
 
@@ -146,7 +152,7 @@ class TipoDispositivoAdmin(admin.ModelAdmin):
     model = Tipo_Dispositivo
     list_display = ['tipo_dispositivo']
 
-####### funzione per cancellare dalla lista l'action "delete_selected" ##########
+    ####### funzione per cancellare dalla lista l'action "delete_selected" ##########
 
     def get_actions(self, request):
         actions = super(TipoDispositivoAdmin, self).get_actions(request)
@@ -154,19 +160,39 @@ class TipoDispositivoAdmin(admin.ModelAdmin):
             del actions['delete_selected']
         return actions
 
- #################################################################################
+    class Media:
+        js = (
+
+            '/static/double_click_prevent_input.default.js',
+            '/static/double_click_prevent_input_continue.js',
+            '/static/double_click_prevent_input_addanother.js',
+            '/static/js/notifIt.js',
+        )
+
+        #################################################################################
+
 
 class ProduttoreAdmin(admin.ModelAdmin):
     model = Produttore
     list_display = ['produttore']
 
-####### funzione per cancellare dalla lista l'action "delete_selected" ##########
+    ####### funzione per cancellare dalla lista l'action "delete_selected" ##########
 
     def get_actions(self, request):
         actions = super(ProduttoreAdmin, self).get_actions(request)
         if 'delete_selected' in actions:
             del actions['delete_selected']
         return actions
+
+    class Media:
+        js = (
+
+            '/static/double_click_prevent_input.default.js',
+            '/static/double_click_prevent_input_continue.js',
+            '/static/double_click_prevent_input_addanother.js',
+            '/static/js/notifIt.js',
+        )
+
 
 #################################################################################
 
@@ -176,8 +202,7 @@ class ModelloAdmin(admin.ModelAdmin):
     list_filter = ['fk_tipo_dispositivo', 'attivo', ]
     search_fields = ['modello', 'fk_produttore__produttore']
 
-
-####### funzione per cancellare dalla lista l'action "delete_selected" ##########
+    ####### funzione per cancellare dalla lista l'action "delete_selected" ##########
 
     def get_actions(self, request):
         actions = super(ModelloAdmin, self).get_actions(request)
@@ -185,17 +210,22 @@ class ModelloAdmin(admin.ModelAdmin):
             del actions['delete_selected']
         return actions
 
-#################################################################################
+    #################################################################################
 
     class Media:
         js = (
             '/static/modelli_search_hints.js',
+            '/static/double_click_prevent_input.default.js',
+            '/static/double_click_prevent_input_continue.js',
+            '/static/double_click_prevent_input_addanother.js',
+            '/static/js/notifIt.js',
         )
+
 
 # @admin.register(Dispositivo)
 # class DispositivoAdmin(admin.ModelAdmin):
 
-    
+
 
 # admin.site.register(Utente, UtenteAdmin)
 admin.site.register(Dispositivo, DispositivoAdmin)
@@ -203,10 +233,7 @@ admin.site.register(Tipo_Dispositivo, TipoDispositivoAdmin)
 admin.site.register(Produttore, ProduttoreAdmin)
 admin.site.register(Modello, ModelloAdmin)
 
-
 admin.site_url = None
 # admin.site.site_header = ('Gestione Supporto Enhanced')
 # admin.site.site_title = ('Gestione Supporto Enhanced')
 # admin.site.index_title = ('Gestione Supporto Enhanced')
-
-

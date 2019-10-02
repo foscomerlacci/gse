@@ -1,0 +1,7 @@
+su interventi/admin introdotto autocomplete_field su fk_beneficiario
+su dispositivi/admin introdotto autocomplete_field su utente
+su prestiti/admin introdotto autocomplete_field su fk_utente
+su anagrafica/admin aggiunta virgola come separatore lista correlati
+inserito nella cartella media il watchdog per il resize automatico dei soli jpg caricati
+##########################################################################################
+aggiunto sbarramento antiFragolino (double_click_prevent) su  interventi/admin, anagrafica/admin, dispositivi/admin, prestiti/admin e wiki/admin

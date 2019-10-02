@@ -2,17 +2,17 @@ from django.contrib import admin
 from .models import Contatto
 from .forms import ContattoForm
 
+
 # Register your models here.
 
 class ContattoAdmin(admin.ModelAdmin):
-
     model = Contatto
 
     form = ContattoForm
 
     exclude = ('area',)
 
-    search_fields = ['cognome', 'servizio',]
+    search_fields = ['cognome', 'servizio', ]
 
     list_display = ['servizio',
                     # 'area',
@@ -22,22 +22,26 @@ class ContattoAdmin(admin.ModelAdmin):
                     'email',
                     ]
 
-
     class Media:
         js = (
 
             '/static/contatti_search_hints.js',
 
+            '/static/double_click_prevent_input.default.js',
+            '/static/double_click_prevent_input_continue.js',
+            '/static/double_click_prevent_input_addanother.js',
+            '/static/js/notifIt.js',
+
         )
 
-
-####### funzione per cancellare dalla lista l'action "delete_selected" ##########
+    ####### funzione per cancellare dalla lista l'action "delete_selected" ##########
 
     def get_actions(self, request):
         actions = super(ContattoAdmin, self).get_actions(request)
         if 'delete_selected' in actions:
             del actions['delete_selected']
         return actions
+
 
 #################################################################################
 

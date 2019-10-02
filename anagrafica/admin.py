@@ -18,6 +18,12 @@ from django.contrib.admin import SimpleListFilter
 # class AssociazioneAdmin(admin.ModelAdmin):
 #     pass
 
+
+
+
+
+
+
 ## qui creo il filtro personalizzato per mostrare di default solo i dispositivi in uso a utenti attivi ################
 
 class FiltroUtenteAttivo(SimpleListFilter):
@@ -77,7 +83,15 @@ class DispositivoAdmin(admin.TabularInline):
     #     widget = form.base_fields['asset'].widget
     #     widget.can_add_related = False
     #     return formset
+    class Media:
+        js = (
+            '/static/double_click_prevent_input.default.js',
+            '/static/double_click_prevent_input_continue.js',
+            '/static/double_click_prevent_input_addanother.js',
+            '/static/js/notifIt.js',
+            # '/static/aggiungi_allegato_hints.js',
 
+        )
 
 
 class UtenteAdmin(admin.ModelAdmin):
@@ -85,6 +99,10 @@ class UtenteAdmin(admin.ModelAdmin):
     # def get_queryset(self, request):                                  # qui si fa filtro sul campo attivo
     #     qs = super(UtenteAdmin, self).get_queryset(request)           # per capire se l'utente è attivo
     #     return qs.filter(attivo__isnull=False)
+
+
+
+
 
 
     def correlati(self, object):
@@ -100,7 +118,7 @@ class UtenteAdmin(admin.ModelAdmin):
         cursor.execute(
             '''SELECT DISTINCT anagrafica_utente.nome, anagrafica_utente.cognome, anagrafica_utente.id
             FROM anagrafica_utente
-            JOIN anagrafica_utente_segretaria_associata 
+            JOIN anagrafica_utente_segretaria_associata
             ON anagrafica_utente_segretaria_associata.from_utente_id = anagrafica_utente.id
             WHERE anagrafica_utente_segretaria_associata.to_utente_id = %s
             ORDER BY anagrafica_utente.cognome''' %(x)
@@ -108,11 +126,33 @@ class UtenteAdmin(admin.ModelAdmin):
         rows = cursor.fetchall()
         lista = []
         for persona in rows:
-            lista.append(str(persona[0]) + " " + persona[1] + " ")
+            lista.append(str(persona[0]) + " " + persona[1] + ", ")
 
-        return  " ".join(lista)
+        return  str(" ".join(lista))[:-2]
 
+################################################################################################################
 
+    def lista_segretarie(self, object):
+        # def show_url(self, id):
+        #     url = reverse("anagrafica", id)
+        #     response = format_html("""<a href="{0}">{1}</a>""", url, url)
+        #     return response
+
+        cursor = connection.cursor()
+        cursor.execute(
+            '''SELECT DISTINCT anagrafica_utente.nome, anagrafica_utente.cognome, anagrafica_utente.id
+            FROM anagrafica_utente        
+            WHERE anagrafica_utente.ruolo = 'seg' AND anagrafica_utente.attivo = 1
+            ORDER BY anagrafica_utente.cognome'''
+        )
+        rows = cursor.fetchall()
+        lista = []
+        for persona in rows:
+            lista.append(str(persona[0]) + " " + persona[1] + " , ")
+
+        return " ".join(lista)
+
+################################################################################################################
 
 ## funzione per cancellare dalla lista l'action "delete_selected" ##########
 
@@ -123,6 +163,7 @@ class UtenteAdmin(admin.ModelAdmin):
         return actions
 
 ##############################################################################
+
 
     list_display = ['matricola', 'nome', 'cognome', 'divisione', 'attivo', 'ruolo', 'correlati']
 
@@ -138,6 +179,10 @@ class UtenteAdmin(admin.ModelAdmin):
     class Media:
         js = (
             '/static/anagrafica_search_hints.js',
+            '/static/double_click_prevent_input.default.js',
+            '/static/double_click_prevent_input_continue.js',
+            '/static/double_click_prevent_input_addanother.js',
+            '/static/js/notifIt.js',
         )
 
 

@@ -38,6 +38,7 @@ class PrestitoAdmin(admin.ModelAdmin):
     # search_fields =  [ ]
     fields = ('fk_utente', 'fk_dispositivo',('tecnico_consegna','inizio_prestito', ),( 'tecnico_ritiro','fine_prestito',), 'note')
 
+    autocomplete_fields = ['fk_utente']
 
 ####### funzione per cancellare dalla lista l'action "delete_selected" ##########
 
@@ -82,6 +83,13 @@ class PrestitoAdmin(admin.ModelAdmin):
 
             '/static/crea_pdf_prestito.js',
 
+            '/static/double_click_prevent_input.default.js',
+            '/static/double_click_prevent_input_continue.js',
+            '/static/double_click_prevent_input_addanother.js',
+            '/static/js/notifIt.js',
+
+
+
         )
 #
 #
@@ -118,6 +126,7 @@ class Prestiti_DispositivoAdmin(admin.ModelAdmin):
 
     list_filter = ['tipo_dispositivo', 'disponibile', ]
 
+
     ordering =  ['-disponibile', ]
 
 
@@ -141,6 +150,11 @@ class Prestiti_DispositivoAdmin(admin.ModelAdmin):
             '/static/prestiti_popola_produttore.js',
             '/static/prestiti_hide_checkout.js',
             '/static/prestiti_cambia_modello.js',
+
+            '/static/double_click_prevent_input.default.js',
+            '/static/double_click_prevent_input_continue.js',
+            '/static/double_click_prevent_input_addanother.js',
+            '/static/js/notifIt.js',
 
 
         )
@@ -190,6 +204,11 @@ class Prestiti_ModelloAdmin(admin.ModelAdmin):
     class Media:
         js =(
             '/static/prestiti_modelli_search_hints.js',
+
+            '/static/double_click_prevent_input.default.js',
+            '/static/double_click_prevent_input_continue.js',
+            '/static/double_click_prevent_input_addanother.js',
+            '/static/js/notifIt.js',
         )
 
 

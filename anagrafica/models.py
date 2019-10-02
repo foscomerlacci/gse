@@ -5,6 +5,7 @@ from django.utils.translation import ugettext_lazy as _
 
 # Create your models here.
 
+
 class Utente(models.Model):
     # scelte_user_type = (
     #     ('fas', 'fast'),
@@ -26,10 +27,13 @@ class Utente(models.Model):
     # segretaria_associata = models.ManyToManyField("self", blank=True, through= 'Associazione', symmetrical=False)
     attivo = models.BooleanField(default=True)
 
-
     def __str__(self):
         # return str(self.cognome).capitalize() + " " + str(self.nome).capitalize()
         return str(self.cognome) + " " + str(self.nome)
+
+    # class Segretarie(models.Manager):
+    #     def get_queryset(self):
+    #         return super().get_queryset().filter(ruolo = 'seg', attivo = True)
 
 
     class Meta:
