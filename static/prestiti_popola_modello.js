@@ -14,6 +14,7 @@
 // {#                     alert(options);#}
 // inspect html to check id of subcategory select dropdown.
                      $("select#id_modello").html(options);
+                     $("input#id_seriale").val("");
                  });
              });
 

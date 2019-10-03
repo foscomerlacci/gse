@@ -252,7 +252,7 @@ td, th {
     border-bottom: 1px solid #eee;
     vertical-align: top;
     padding: 8px;
-    font-family: "K2D","Roboto", "Lucida Grande", Verdana, Arial, sans-serif;
+    font-family: "Roboto", "Lucida Grande", Verdana, Arial, sans-serif;
 }
 
 th {
@@ -366,7 +366,7 @@ table thead th.sorted .sortoptions a.sortremove {
 }
 
 table thead th.sorted .sortoptions a.sortremove:after {
-    /*content: "\\";*/
+    content: '\\';
     position: absolute;
     top: -6px;
     left: 3px;
@@ -891,7 +891,6 @@ table#change-history tbody th {
 
 #content-related {
     background: #f8f8f8;
-
 }
 
 #content-related .module {

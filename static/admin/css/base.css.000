@@ -4,11 +4,14 @@
 
 @import url(fonts.css);
 
+
+
+
 body {
     margin: 0;
     padding: 0;
-    font-size: 14px;
-    font-family: "K2D","Roboto","Lucida Grande","DejaVu Sans","Bitstream Vera Sans",Verdana,Arial,sans-serif;
+    font-size: 12px;
+    font-family: "Lucida Grande","DejaVu Sans","Bitstream Vera Sans",Verdana,Arial,sans-serif;
     color: #333;
     background: #fff;
 }
@@ -247,12 +250,12 @@ table {
 }
 
 td, th {
-    font-size: 13px;
+    font-size: 16px;
     line-height: 16px;
     border-bottom: 1px solid #eee;
     vertical-align: top;
     padding: 8px;
-    font-family: "K2D","Roboto", "Lucida Grande", Verdana, Arial, sans-serif;
+    font-family: "Lucida Grande", Verdana, Arial, sans-serif;
 }
 
 th {
@@ -366,7 +369,7 @@ table thead th.sorted .sortoptions a.sortremove {
 }
 
 table thead th.sorted .sortoptions a.sortremove:after {
-    /*content: "\\";*/
+    content: '\\';
     position: absolute;
     top: -6px;
     left: 3px;
@@ -410,7 +413,7 @@ input, textarea, select, .form-row p, form .button {
     margin: 2px 0;
     padding: 2px 3px;
     vertical-align: middle;
-    font-family: "Roboto", "Lucida Grande", Verdana, Arial, sans-serif;
+    font-family: "Lucida Grande", Verdana, Arial, sans-serif;
     font-weight: normal;
     font-size: 13px;
 }
@@ -771,6 +774,8 @@ table#change-history tbody th {
 
 #content {
     padding: 20px 40px;
+	font-family: "Lucida Grande","DejaVu Sans","Bitstream Vera Sans",Verdana,Arial,sans-serif;
+
 }
 
 .dashboard #content {
@@ -845,13 +850,14 @@ table#change-history tbody th {
 #branding h1 {
     padding: 0;
     margin: 0 20px 0 0;
-    font-weight: 300;
-    font-size: 24px;
+    font-weight: 400;
+    font-size: 34px;
     color: #f5dd5d;
 }
 
 #branding h1, #branding h1 a:link, #branding h1 a:visited {
     color: #f5dd5d;
+	font-family: "Exo 2";
 }
 
 #branding h2 {
@@ -891,7 +897,6 @@ table#change-history tbody th {
 
 #content-related {
     background: #f8f8f8;
-
 }
 
 #content-related .module {

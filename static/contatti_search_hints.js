@@ -6,7 +6,7 @@
 (function($) {
     $(function() {
 
-        $("#searchbar").attr('placeholder', "dispositivo, beneficiario, tipo intervento")
+        $("#searchbar").attr('placeholder', "cognome, servizio")
 
     });
 })(django.jQuery);
