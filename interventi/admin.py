@@ -63,6 +63,8 @@ class InterventoAdmin(admin.ModelAdmin):
             '/static/double_click_prevent_input.default.js',
             '/static/double_click_prevent_input_continue.js',
             '/static/double_click_prevent_input_addanother.js',
+            '/static/popup_after_click.js',
+
             '/static/js/notifIt.js',
             # '/static/aggiungi_allegato_hints.js',
 

@@ -9,16 +9,25 @@ $(document).ready(function() {
 
             if ($("li.success").is(":visible")) {
                     $("li.success").hide();
+
                     notif({
                     msg: "<b>salvataggio corretto</b>",
+                    position: "center",
+                    timeout: 3000,
+                    fade: true,
+                    // opacity: 0.8,
                     type: "success"});
 
-                    // $("li.success").hide();
 
             }else if($("p.errornote").is(":visible")) {
                     $("p.errornote").hide();
+
                     notif({
-                    msg: "<b>si è verificato un'errore</b>",
+                    msg: "<b>si è verificato un errore</b>",
+                    position: "center",
+                    timeout: 3000,
+                    fade: true,
+                    // opacity: 0.8,
                     type: "error"});
 
 
