@@ -19,16 +19,34 @@
 (function($) {
 
 $(document).ready(function() {
-        // $("div.submit-row.input.default").click(function() {
+
         $('input[name="_continue"]').click(function() {
 
 
             $("div.submit-row").hide();
-
                 // notif({
                 //     msg: "<b>salvataggio corretto</b>",
-                //     type: "success"
-                // });
+                //     type: "success"});
+
+            //
+            // if ($("li.success").lenght) {
+            //         $("li.success").hide();
+            //         notif({
+            //         msg: "<b>salvataggio corretto</b>",
+            //         type: "success"});
+            //
+            //
+            //         $("li.success").hide();
+            //
+            // }else if($("p.errornote").lenght){
+            //         notif({
+            //         msg: "<b>errrrrrrrrore</b>",
+            //         type: "success"});
+            //
+            //         $("p.errornote").hide();
+            // }
+
+
 
         });
 
