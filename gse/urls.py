@@ -42,6 +42,16 @@ urlpatterns = [
 
 urlpatterns += staticfiles_urlpatterns()    # indispensabile per i file statici serviti da gunicorn
 
+if settings.DEBUG:
+    import debug_toolbar
+    urlpatterns = [
+        path('__debug__/', include(debug_toolbar.urls)),
+
+        # For django versions before 2.0:
+        # url(r'^__debug__/', include(debug_toolbar.urls)),
+
+    ] + urlpatterns
+
 admin.site.site_url = None
 admin.site.site_header = ('Gestione Supporto Enhanced')
 # admin.site.site_title = ('Gestione Supporto Enhanced')

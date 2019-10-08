@@ -66,7 +66,8 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'crequest',
     'prestiti',
-
+    'wiki',
+    # 'debug_toolbar',
 
     # 'assegnazioni',
 
@@ -78,14 +79,17 @@ INSTALLED_APPS = (
 )
 
 MIDDLEWARE= (
+
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'crequest.middleware.CrequestMiddleware',
+    # 'debug_toolbar.middleware.DebugToolbarMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'django.middleware.security.SecurityMiddleware',
+
     # 'prestiti.request_exposer.RequestExposerMiddleware',
 
 )
@@ -152,11 +156,11 @@ USE_TZ = False
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     # '/static/admin/css/',
-    'gse/static'
+    # 'static'
     # os.path.join(BASE_DIR, "static"),
 ]
 
-STATIC_ROOT = '/home/utente/PycharmProjects/gse/static'
+STATIC_ROOT = '/home/utente/PycharmProjects/gse.lab/static'
 STATICFILES_FINDERS = ('django.contrib.staticfiles.finders.AppDirectoriesFinder',
                        'django.contrib.staticfiles.finders.FileSystemFinder',)
 
@@ -168,7 +172,26 @@ MAX_UPLOAD_SIZE = 5120000    # max uploadable = 5 MB
 
 JQUERY_URL = True
 
+INTERNAL_IPS = ('127.0.0.1:8000',)
 
+
+# DEBUG_TOOLBAR_PANELS = (
+#     'debug_toolbar.panels.version.VersionDebugPanel',
+#     'debug_toolbar.panels.timer.TimerDebugPanel',
+#     'debug_toolbar.panels.settings_vars.SettingsVarsDebugPanel',
+#     'debug_toolbar.panels.headers.HeaderDebugPanel',
+#     'debug_toolbar.panels.request_vars.RequestVarsDebugPanel',
+#     'debug_toolbar.panels.template.TemplateDebugPanel',
+#     'debug_toolbar.panels.sql.SQLDebugPanel',
+#     'debug_toolbar.panels.signals.SignalDebugPanel',
+#     'debug_toolbar.panels.logger.LoggingPanel',
+# )
+
+def show_toolbar(request):
+  return True
+DEBUG_TOOLBAR_CONFIG = {
+  "SHOW_TOOLBAR_CALLBACK" : show_toolbar,
+}
 
 THUMBNAIL_PROCESSORS = (
     'easy_thumbnails.processors.colorspace',

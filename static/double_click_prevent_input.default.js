@@ -21,16 +21,32 @@
 (function($) {
 
 $(document).ready(function() {
-        // $("div.submit-row.input.default").click(function() {
+
         $("input.default").click(function() {
 
 
             $("div.submit-row").hide();
 
                 // notif({
-                //     msg: "<b>inserimento corretto</b>",
-                //     type: "success"
-                // });
+                //     msg: "<b>salvataggio corretto</b>",
+                //     type: "success"});
+
+
+            // if ($("li.success").lenght) {
+            //         $("li.success").hide();
+            //         notif({
+            //         msg: "<b>salvataggio corretto</b>",
+            //         type: "success"});
+            //
+            //         $("li.success").hide();
+            //
+            // }else if($("p.errornote").lenght) {
+            //         notif({
+            //         msg: "<b>errrrrrrrrore</b>",
+            //         type: "success"});
+            //
+            //         $("p.errornote").hide();
+            // }
 
         });
 

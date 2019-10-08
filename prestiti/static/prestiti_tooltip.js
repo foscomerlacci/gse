@@ -10,7 +10,7 @@
 (function($) {
     $(function() {
 
-        $("#prestiti_allegato_set-group").attr('title', "formati consentiti: .msg .doc .docx .xls .xlsx .txt .pdf .jpg max 5 MB")
+        $("#prestiti_allegato_set-group").attr('title', "formati consentiti: .msg .doc .docx .xls .xlsx .txt .pdf .jpg max 10 MB")
 
         // $("#header").attr('title', "dio mostro")
 

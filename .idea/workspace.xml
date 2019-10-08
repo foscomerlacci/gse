@@ -1,12 +1,120 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5f8b6993-d303-4b0a-bf3f-3daba5e7bc6c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/prestiti/static/prestiti_hide_checkout.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gse.sqlite3" afterPath="$PROJECT_DIR$/gse.sqlite3" />
+    <list default="true" id="5f8b6993-d303-4b0a-bf3f-3daba5e7bc6c" name="Default" comment="su interventi/admin introdotto autocomplete_field su fk_beneficiario&#10;su dispositivi/admin introdotto autocomplete_field su utente&#10;su prestiti/admin introdotto autocomplete_field su fk_utente&#10;su anagrafica/admin aggiunta virgola come separatore lista correlati&#10;inserito nella cartella media il watchdog per il resize automatico dei soli jpg caricati&#10;aggiunto sbarramento antiFragolino (double_click_prevent) su  interventi/admin, anagrafica/admin, dispositivi/admin, prestiti/admin e wiki/admin">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gse.sqlite3.vuoto" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/anagrafica/migrations.000/0001_initial.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/anagrafica/migrations.000/0002_utente_attivo.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/anagrafica/migrations.000/0003_auto_20180405_1412.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/anagrafica/migrations.000/0004_auto_20180405_1523.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/anagrafica/migrations.000/0005_auto_20180405_1524.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/anagrafica/migrations.000/0006_attivi.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/anagrafica/migrations.000/0007_delete_attivi.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/anagrafica/migrations.000/0008_auto_20180424_2346.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/anagrafica/migrations.000/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dispositivi/__pycache__.000/admin.cpython-36.pyc.140338881932592" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dispositivi/migrations.000/0001_initial.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dispositivi/migrations.000/0002_auto_20180401_0036.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dispositivi/migrations.000/0003_auto_20180405_1412.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dispositivi/migrations.000/0004_allegato_descrizione.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dispositivi/migrations.000/0005_auto_20180407_1723.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dispositivi/migrations.000/0006_auto_20180407_1814.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dispositivi/migrations.000/0007_allegato_descrizione2.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dispositivi/migrations.000/0008_remove_allegato_descrizione2.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dispositivi/migrations.000/0009_auto_20180408_0153.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dispositivi/migrations.000/0010_auto_20180409_1435.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dispositivi/migrations.000/0011_auto_20180412_1655.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dispositivi/migrations.000/0012_auto_20180412_1656.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dispositivi/migrations.000/0013_auto_20180412_1703.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dispositivi/migrations.000/0014_auto_20180420_1700.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dispositivi/migrations.000/0015_auto_20180420_1711.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dispositivi/migrations.000/0016_auto_20180420_2322.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dispositivi/migrations.000/0017_auto_20180423_1103.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dispositivi/migrations.000/0018_auto_20180423_1106.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dispositivi/migrations.000/0019_auto_20180427_0929.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dispositivi/migrations.000/0020_auto_20180525_1139.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dispositivi/migrations.000/0021_auto_20180525_1416.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dispositivi/migrations.000/0022_auto_20180525_1422.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dispositivi/migrations.000/0023_auto_20180525_1433.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dispositivi/migrations.000/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/gse.sqlite3" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/gse/templates.000/admin/base.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/gse/templates.000/admin/base_site.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/interventi/migrations.000/0001_initial.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/interventi/migrations.000/0002_auto_20180424_1224.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/interventi/migrations.000/0003_auto_20180424_1225.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/interventi/migrations.000/0004_auto_20180424_1503.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/interventi/migrations.000/0005_auto_20180424_1637.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/interventi/migrations.000/0006_auto_20180424_1649.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/interventi/migrations.000/0007_intervento_data_chiusura.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/interventi/migrations.000/0008_auto_20180426_1705.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/interventi/migrations.000/0009_auto_20180426_1717.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/interventi/migrations.000/0010_auto_20180525_1457.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/interventi/migrations.000/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/prestiti/apps.py.000" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/prestiti/migrations.000/0001_initial.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/prestiti/migrations.000/0002_auto_20180508_1553.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/prestiti/migrations.000/0003_auto_20180508_1557.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/prestiti/migrations.000/0004_auto_20180508_1655.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/prestiti/migrations.000/0005_remove_prestiti_dispositivo_utente.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/prestiti/migrations.000/0006_auto_20180511_1116.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/prestiti/migrations.000/0007_prestiti_allegato.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/prestiti/migrations.000/0008_auto_20180515_1701.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/prestiti/migrations.000/0009_auto_20180523_1154.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/prestiti/migrations.000/0010_auto_20180524_1449.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/prestiti/migrations.000/0011_auto_20180525_1510.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/prestiti/migrations.000/0012_auto_20180525_1631.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/prestiti/migrations.000/0013_auto_20180528_1201.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/prestiti/migrations.000/0014_auto_20180604_1205.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/prestiti/migrations.000/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static.000/dispositivi_search_hints.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static.000/dispositivi_tooltip.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static.000/dispositivi_tooltip_init.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static.000/modelli_search_hints.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static.000/popola_modello.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static.000/popola_produttore.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static.000/prestiti_scelta_dispositivo.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static.000/prestiti_scelta_produttore.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static.000/scelta_dispositivo.js.ok" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static.000/tooltipster/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static.000/tooltipster/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static.000/tooltipster/bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static.000/tooltipster/composer.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static.000/tooltipster/dist/css/plugins/tooltipster/sideTip/themes/tooltipster-sideTip-borderless.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static.000/tooltipster/dist/css/plugins/tooltipster/sideTip/themes/tooltipster-sideTip-light.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static.000/tooltipster/dist/css/plugins/tooltipster/sideTip/themes/tooltipster-sideTip-noir.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static.000/tooltipster/dist/css/plugins/tooltipster/sideTip/themes/tooltipster-sideTip-punk.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static.000/tooltipster/dist/css/plugins/tooltipster/sideTip/themes/tooltipster-sideTip-shadow.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static.000/tooltipster/dist/css/tooltipster.bundle.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static.000/tooltipster/dist/css/tooltipster.bundle.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static.000/tooltipster/dist/css/tooltipster.main.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static.000/tooltipster/dist/css/tooltipster.main.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static.000/tooltipster/dist/js/plugins/tooltipster/SVG/tooltipster-SVG.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static.000/tooltipster/dist/js/plugins/tooltipster/SVG/tooltipster-SVG.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static.000/tooltipster/dist/js/tooltipster.bundle.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static.000/tooltipster/dist/js/tooltipster.bundle.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static.000/tooltipster/dist/js/tooltipster.main.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static.000/tooltipster/dist/js/tooltipster.main.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static.000/tooltipster/package.json" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/prestiti/admin.py" afterPath="$PROJECT_DIR$/prestiti/admin.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/prestiti_scelta_dispositivo.js" afterPath="$PROJECT_DIR$/static/prestiti_scelta_dispositivo.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gse/settings.py" afterPath="$PROJECT_DIR$/gse/settings.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gse/urls.py" afterPath="$PROJECT_DIR$/gse/urls.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/prestiti/static/prestiti_tooltip.js" afterPath="$PROJECT_DIR$/prestiti/static/prestiti_tooltip.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/admin/fonts/LICENSE.txt" afterPath="$PROJECT_DIR$/static/admin/fonts/LICENSE.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/colorfield/jscolor/jscolor.js" afterPath="$PROJECT_DIR$/static/colorfield/jscolor/jscolor.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/dispositivi_tooltip_init.js" afterPath="$PROJECT_DIR$/static/dispositivi_tooltip_init.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/double_click_prevent_input.default.js" afterPath="$PROJECT_DIR$/static/double_click_prevent_input.default.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/double_click_prevent_input_addanother.js" afterPath="$PROJECT_DIR$/static/double_click_prevent_input_addanother.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/double_click_prevent_input_continue.js" afterPath="$PROJECT_DIR$/static/double_click_prevent_input_continue.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/prestiti_tooltip.js" afterPath="$PROJECT_DIR$/static/prestiti_tooltip.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/prestiti_tooltip_init.js" afterPath="$PROJECT_DIR$/static/prestiti_tooltip_init.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/tooltipster/README.md" afterPath="$PROJECT_DIR$/static/tooltipster/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/tooltipster/bower.json" afterPath="$PROJECT_DIR$/static/tooltipster/bower.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/tooltipster/dist/css/tooltipster.bundle.css" afterPath="$PROJECT_DIR$/static/tooltipster/dist/css/tooltipster.bundle.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/tooltipster/dist/js/tooltipster.bundle.js" afterPath="$PROJECT_DIR$/static/tooltipster/dist/js/tooltipster.bundle.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/tooltipster/dist/js/tooltipster.main.js" afterPath="$PROJECT_DIR$/static/tooltipster/dist/js/tooltipster.main.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -16,6 +124,11 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/gse_lab$popola_utenti.coverage" NAME="popola_utenti Coverage Results" MODIFIED="1561369925194" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/popola/popola_utenti" />
+    <SUITE FILE_PATH="coverage/gse_lab$popola_interventi.coverage" NAME="popola_interventi Coverage Results" MODIFIED="1561374733095" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/popola/popola_interventi" />
+    <SUITE FILE_PATH="coverage/gse_lab$watchdog.coverage" NAME="watchdog Coverage Results" MODIFIED="1566975026938" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/script" />
+    <SUITE FILE_PATH="coverage/gse_lab$watchdog_fotoresize.coverage" NAME="watchdog_fotoresize Coverage Results" MODIFIED="1567082179611" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/script" />
+    <SUITE FILE_PATH="coverage/gse_lab$popola_dispositivi.coverage" NAME="popola_dispositivi Coverage Results" MODIFIED="1561369932733" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/popola/popola_dispositivi" />
     <SUITE FILE_PATH="coverage/gse$forms.coverage" NAME="forms Coverage Results" MODIFIED="1527286554788" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/prestiti" />
     <SUITE FILE_PATH="coverage/gse$models.coverage" NAME="models Coverage Results" MODIFIED="1526291231515" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/prestiti" />
   </component>
@@ -42,43 +155,28 @@
     <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="gse.lab" />
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="admin.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dispositivi/admin.py">
+      <file leaf-file-name="popup_after_click.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/interventi/static/popup_after_click.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="14">
-              <caret line="38" column="27" lean-forward="false" selection-start-line="38" selection-start-column="27" selection-end-line="38" selection-end-column="27" />
-              <folding />
+            <state relative-caret-position="28">
+              <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+              <folding>
+                <element signature="e#0#41#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="scelta_produttore.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dispositivi/static/scelta_produttore.js">
+      <file leaf-file-name="prestiti_tooltip.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/prestiti_tooltip.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="56">
-              <caret line="4" column="21" lean-forward="false" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="21" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="prestiti_hide_ritiro.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/prestiti/static/prestiti_hide_ritiro.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="42">
-              <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="14" selection-end-column="18" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dispositivi_search_hints.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dispositivi/static/dispositivi_search_hints.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="11" column="18" lean-forward="false" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
+            <state relative-caret-position="168">
+              <caret line="12" column="39" lean-forward="false" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="39" />
               <folding />
             </state>
           </provider>
@@ -87,65 +185,78 @@
       <file leaf-file-name="dispositivi_tooltip.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dispositivi/static/dispositivi_tooltip.js">
           <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="392">
+              <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dispositivi_tooltip_init.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dispositivi/static/dispositivi_tooltip_init.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="140">
+              <caret line="10" column="38" lean-forward="false" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="38" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="prestiti_tooltip_init.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/prestiti_tooltip_init.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="140">
+              <caret line="10" column="55" lean-forward="false" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="55" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="prestiti_tooltip.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/prestiti/static/prestiti_tooltip.js">
+          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="168">
-              <caret line="12" column="72" lean-forward="false" selection-start-line="12" selection-start-column="72" selection-end-line="12" selection-end-column="72" />
+              <caret line="12" column="125" lean-forward="false" selection-start-line="12" selection-start-column="125" selection-end-line="12" selection-end-column="125" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="modelli_search_hints.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dispositivi/static/modelli_search_hints.js">
+      <file leaf-file-name="prestiti_tooltip_init.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/prestiti/static/prestiti_tooltip_init.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="140">
+              <caret line="10" column="47" lean-forward="false" selection-start-line="10" selection-start-column="47" selection-end-line="10" selection-end-column="47" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="popola_modello.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dispositivi/static/popola_modello.js">
+      <file leaf-file-name="dispositivi_tooltip_init.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/dispositivi_tooltip_init.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+            <state relative-caret-position="140">
+              <caret line="10" column="46" lean-forward="false" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="46" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/prestiti/models.py">
+      <file leaf-file-name="dispositivi_tooltip.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/dispositivi_tooltip.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="778">
-              <caret line="235" column="43" lean-forward="false" selection-start-line="235" selection-start-column="43" selection-end-line="235" selection-end-column="43" />
-              <folding>
-                <marker date="1531141225242" expanded="true" signature="7748:7851" ph="UPDATE prest... " />
-                <marker date="1531141225242" expanded="true" signature="7902:8005" ph="UPDATE prest... " />
-                <marker date="1531141225242" expanded="true" signature="8518:8618" ph="UPDATE prest... " />
-                <marker date="1531141225242" expanded="true" signature="8666:8766" ph="UPDATE prest... " />
-              </folding>
+            <state relative-caret-position="168">
+              <caret line="12" column="37" lean-forward="false" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="30" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="prestiti_hide_checkout.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/prestiti/static/prestiti_hide_checkout.js">
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="490">
-              <caret line="37" column="0" lean-forward="true" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#41#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="admin.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/prestiti/admin.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="644">
-              <caret line="140" column="47" lean-forward="false" selection-start-line="140" selection-start-column="47" selection-end-line="140" selection-end-column="47" />
+            <state relative-caret-position="252">
+              <caret line="18" column="38" lean-forward="false" selection-start-line="18" selection-start-column="38" selection-end-line="18" selection-end-column="38" />
               <folding />
             </state>
           </provider>
@@ -156,8 +267,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
         <option value="JavaScript File" />
       </list>
     </option>
@@ -172,7 +283,11 @@
       <find>'</find>
       <find>t:1'&gt;</find>
       <find>disponibile</find>
+      <find>correl</find>
     </findStrings>
+    <replaceStrings>
+      <replace />
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -180,57 +295,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/dispositivi/static/tooltips.js" />
-        <option value="$PROJECT_DIR$/static/admin/css/base.css" />
-        <option value="$PROJECT_DIR$/dispositivi/static/dispositivi_tooltip_init.js" />
-        <option value="$PROJECT_DIR$/prestiti/request_exposer.py" />
-        <option value="$PROJECT_DIR$/prestiti/middlewares/middlewares.py" />
-        <option value="$PROJECT_DIR$/prestiti/static/popola_modello.js" />
-        <option value="$PROJECT_DIR$/prestiti/static/popola_fk_dispositivo.js" />
-        <option value="$PROJECT_DIR$/dispositivi/static/modelli_search_hints.js" />
-        <option value="$PROJECT_DIR$/prestiti/static/prestiti_tooltip_init.js" />
-        <option value="$PROJECT_DIR$/interventi/toolbox.py" />
-        <option value="$PROJECT_DIR$/templates/admin/base.html" />
-        <option value="$PROJECT_DIR$/prestiti/static/crea_pdf_prestito.js" />
-        <option value="$PROJECT_DIR$/interventi/admin.py" />
-        <option value="$PROJECT_DIR$/interventi/static/interventi_search_hints.js" />
-        <option value="$PROJECT_DIR$/prestiti/templates/ModuloConsegnaRitiro/ModuloConsegnaRitiro.htm" />
-        <option value="$PROJECT_DIR$/prestiti/templates/prestito.html.000" />
-        <option value="$PROJECT_DIR$/dispositivi/static/dispositivi_search_hints.js" />
+        <option value="$PROJECT_DIR$/prestiti/static/prestiti_hide_checkout.js" />
+        <option value="$PROJECT_DIR$/gse/urls.py" />
+        <option value="$PROJECT_DIR$/anagrafica/forms.py" />
+        <option value="$PROJECT_DIR$/anagrafica/models.py" />
+        <option value="$PROJECT_DIR$/popola/popola_dispositivi/popola_dispositivi.py" />
+        <option value="$PROJECT_DIR$/interventi/views.py" />
+        <option value="$PROJECT_DIR$/popola/popola_interventi/query.txt" />
+        <option value="$PROJECT_DIR$/interventi/static/popola_asset.js.old" />
+        <option value="$PROJECT_DIR$/interventi/static/popola_asset.js.000" />
+        <option value="$PROJECT_DIR$/static/popola_asset.js" />
+        <option value="$PROJECT_DIR$/interventi/static/popola_asset.js" />
+        <option value="$PROJECT_DIR$/popola/popola_utenti/popola_utenti.py" />
+        <option value="$PROJECT_DIR$/popola/popola_interventi/popola_interventi.py" />
+        <option value="$PROJECT_DIR$/dispositivi/fields.py" />
         <option value="$PROJECT_DIR$/dispositivi/toolbox.py" />
+        <option value="$PROJECT_DIR$/dispositivi/models.py" />
+        <option value="$PROJECT_DIR$/script/watchdog.py" />
+        <option value="$PROJECT_DIR$/script/watchdog_fotoresize.py" />
+        <option value="$PROJECT_DIR$/script/watchdog_test.py" />
+        <option value="$PROJECT_DIR$/foto/comprimi.py" />
+        <option value="$PROJECT_DIR$/manage.py" />
+        <option value="$PROJECT_DIR$/foto/watchdog_alternativo.py" />
+        <option value="$PROJECT_DIR$/foto/comandi.txt" />
+        <option value="$PROJECT_DIR$/foto/watchdog_fotoresize.py" />
+        <option value="$PROJECT_DIR$/foto/avvio.sh" />
+        <option value="$PROJECT_DIR$/gse/settings.py" />
+        <option value="$PROJECT_DIR$/static/double_click_prevent.js" />
+        <option value="$PROJECT_DIR$/interventi/static/double_click_prevent.js" />
+        <option value="$PROJECT_DIR$/interventi/static/double_click_prevent_input.js" />
+        <option value="$PROJECT_DIR$/anagrafica/admin.py" />
+        <option value="$PROJECT_DIR$/dispositivi/admin.py" />
+        <option value="$PROJECT_DIR$/prestiti/admin.py" />
+        <option value="$PROJECT_DIR$/changelog" />
+        <option value="$PROJECT_DIR$/wiki/admin.py" />
+        <option value="$PROJECT_DIR$/static/double_click_prevent_input.default.js" />
+        <option value="$PROJECT_DIR$/interventi/static/js/popup_after_click.js" />
+        <option value="$PROJECT_DIR$/templates/admin/base.html" />
+        <option value="$PROJECT_DIR$/interventi/admin.py" />
+        <option value="$PROJECT_DIR$/interventi/static/double_click_prevent_input.default.js" />
+        <option value="$PROJECT_DIR$/interventi/static/double_click_prevent_input_continue.js" />
+        <option value="$PROJECT_DIR$/interventi/static/double_click_prevent_input_addanother.js" />
+        <option value="$PROJECT_DIR$/interventi/static/popup_after_click.js" />
+        <option value="$PROJECT_DIR$/static/dispositivi_tooltip_init.js" />
+        <option value="$PROJECT_DIR$/static/dispositivi_tooltip.js" />
+        <option value="$PROJECT_DIR$/static/prestiti_tooltip_init.js" />
+        <option value="$PROJECT_DIR$/static/prestiti_tooltip.js" />
+        <option value="$PROJECT_DIR$/dispositivi/static/dispositivi_tooltip_init.js" />
+        <option value="$PROJECT_DIR$/prestiti/static/prestiti_tooltip_init.js" />
         <option value="$PROJECT_DIR$/prestiti/static/prestiti_tooltip.js" />
         <option value="$PROJECT_DIR$/dispositivi/static/dispositivi_tooltip.js" />
-        <option value="$PROJECT_DIR$/prestiti/templates/prestito.html" />
-        <option value="$PROJECT_DIR$/interventi/forms.py" />
-        <option value="$PROJECT_DIR$/dispositivi/static/popola_produttore.js" />
-        <option value="$PROJECT_DIR$/dispositivi/static/popola_modello.js" />
-        <option value="$PROJECT_DIR$/dispositivi/static/scelta_produttore.js" />
-        <option value="$PROJECT_DIR$/dispositivi/views.py" />
-        <option value="$PROJECT_DIR$/dispositivi/static/scelta_dispositivo.js" />
-        <option value="$PROJECT_DIR$/prestiti/static/prestiti_popola_modello.js" />
-        <option value="$PROJECT_DIR$/prestiti/static/prestiti_scelta_produttore.js" />
-        <option value="$PROJECT_DIR$/gse/urls.py" />
-        <option value="$PROJECT_DIR$/dispositivi/urls.py" />
-        <option value="$PROJECT_DIR$/prestiti/urls.py" />
-        <option value="$PROJECT_DIR$/prestiti/static/prestiti_scelta_dispositivo.js" />
-        <option value="$PROJECT_DIR$/dispositivi/forms.py" />
-        <option value="$PROJECT_DIR$/static/popola_produttore.js" />
-        <option value="$PROJECT_DIR$/prestiti/views.py" />
-        <option value="$PROJECT_DIR$/gse/settings.py" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/prestiti/forms.py" />
-        <option value="$PROJECT_DIR$/prestiti/static/prestiti_hide_consegna.js" />
-        <option value="$PROJECT_DIR$/prestiti/static/prestiti_hide_ritiro.js" />
-        <option value="$PROJECT_DIR$/dispositivi/admin.py" />
-        <option value="$PROJECT_DIR$/interventi/models.py" />
-        <option value="$PROJECT_DIR$/dispositivi/migrations/0020_auto_20180525_1139.py" />
-        <option value="$PROJECT_DIR$/dispositivi/migrations/0023_auto_20180525_1433.py" />
-        <option value="$PROJECT_DIR$/dispositivi/models.py" />
-        <option value="$PROJECT_DIR$/static/prestiti_scelta_dispositivo.js" />
-        <option value="$PROJECT_DIR$/anagrafica/templates/admin/anagrafica/change_form.html" />
-        <option value="$PROJECT_DIR$/prestiti/models.py" />
-        <option value="$PROJECT_DIR$/prestiti/admin.py" />
-        <option value="$PROJECT_DIR$/prestiti/static/prestiti_hide_checkout.js" />
       </list>
     </option>
   </component>
@@ -243,7 +358,7 @@
   <component name="ProjectFrameBounds">
     <option name="y" value="27" />
     <option name="width" value="1920" />
-    <option name="height" value="1028" />
+    <option name="height" value="1148" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -261,49 +376,17 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="gse" />
+              <option name="myItemId" value="gse.lab" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="gse" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gse" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gse" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="prestiti" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gse" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gse" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="prestiti" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
+              <option name="myItemId" value="gse.lab" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -312,20 +395,28 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.SQL" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="SearchEverywhereHistoryKey" value="popola_fk_dispositivo&#9;null&#9;null&#10;messages&#9;null&#9;null&#10;/static/&#9;FILE&#9;file:///home/utente/.virtualenvs/gse3.6/lib/python3.6/site-packages/django/contrib/admin/static&#10;popola_asset&#9;FILE&#9;file:///home/utente/PycharmProjects/gse/static/popola_asset.js&#10;static&#9;null&#9;null" />
+    <property name="SearchEverywhereHistoryKey" value="hover&#9;null&#9;null&#10;tooltipster&#9;FILE&#9;file:///home/utente/PycharmProjects/gse.lab/static.000/tooltipster/dist/css/plugins/tooltipster/sideTip/themes/tooltipster-sideTip-borderless.min.css&#10;popola_asset&#9;FILE&#9;file:///home/utente/PycharmProjects/gse.lab/interventi/static/popola_asset.js&#10;fetchall&#9;null&#9;null&#10;popola_fk_dispositivo&#9;null&#9;null&#10;messages&#9;null&#9;null&#10;/static/&#9;FILE&#9;file:///home/utente/.virtualenvs/gse3.6/lib/python3.6/site-packages/django/contrib/admin/static&#10;static&#9;null&#9;null" />
     <property name="run.code.analysis.last.selected.profile" value="aDefault" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="add_unversioned_files" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/prestiti" />
-      <recent name="$PROJECT_DIR$/prestiti/static" />
       <recent name="$PROJECT_DIR$/interventi/static" />
-      <recent name="$PROJECT_DIR$/dispositivi/static" />
-      <recent name="$PROJECT_DIR$/interventi" />
+      <recent name="$PROJECT_DIR$/foto" />
+      <recent name="$PROJECT_DIR$/script" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/static" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/interventi/static" />
+      <recent name="$PROJECT_DIR$/interventi/static/js" />
+      <recent name="$PROJECT_DIR$/foto" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/popola/popola_interventi" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -340,40 +431,97 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Django server.gse">
-    <configuration default="false" name="models" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.watchdog_fotoresize">
+    <configuration default="false" name="popola_dispositivi" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/prestiti" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/popola/popola_dispositivi" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="gse" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/prestiti/models.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/popola/popola_dispositivi/popola_dispositivi.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="forms" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="false" name="popola_utenti" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/prestiti" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/popola/popola_utenti" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="gse" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/prestiti/forms.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/popola/popola_utenti/popola_utenti.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="popola_interventi" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/popola/popola_interventi" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="gse" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/popola/popola_interventi/popola_interventi.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="watchdog" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/script" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="gse" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/script/watchdog_test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="watchdog_fotoresize" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/script" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="gse" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/foto/watchdog_fotoresize.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -585,15 +733,21 @@
       <option name="customRunCommand" value="" />
       <method />
     </configuration>
-    <list size="3">
+    <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Django server.gse" />
-      <item index="1" class="java.lang.String" itemvalue="Python.models" />
-      <item index="2" class="java.lang.String" itemvalue="Python.forms" />
+      <item index="1" class="java.lang.String" itemvalue="Python.popola_dispositivi" />
+      <item index="2" class="java.lang.String" itemvalue="Python.popola_utenti" />
+      <item index="3" class="java.lang.String" itemvalue="Python.popola_interventi" />
+      <item index="4" class="java.lang.String" itemvalue="Python.watchdog" />
+      <item index="5" class="java.lang.String" itemvalue="Python.watchdog_fotoresize" />
     </list>
     <recent_temporary>
-      <list size="2">
-        <item index="0" class="java.lang.String" itemvalue="Python.forms" />
-        <item index="1" class="java.lang.String" itemvalue="Python.models" />
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="Python.watchdog_fotoresize" />
+        <item index="1" class="java.lang.String" itemvalue="Python.watchdog" />
+        <item index="2" class="java.lang.String" itemvalue="Python.popola_interventi" />
+        <item index="3" class="java.lang.String" itemvalue="Python.popola_dispositivi" />
+        <item index="4" class="java.lang.String" itemvalue="Python.popola_utenti" />
       </list>
     </recent_temporary>
   </component>
@@ -611,22 +765,50 @@
       <option name="presentableId" value="Default" />
       <updated>1524230112274</updated>
     </task>
+    <task id="LOCAL-00001" summary="su interventi/admin introdotto autocomplete_field su fk_beneficiario&#10;su dispositivi/admin introdotto autocomplete_field su utente&#10;su prestiti/admin introdotto autocomplete_field su fk_utente&#10;su anagrafica/admin aggiunta virgola come separatore lista correlati&#10;inserito nella cartella media il watchdog per il resize automatico dei soli jpg caricati&#10;aggiunto sbarramento antiFragolino (double_click_prevent) su  interventi/admin, anagrafica/admin, dispositivi/admin, prestiti/admin e wiki/admin">
+      <created>1570040621889</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1570040621890</updated>
+    </task>
+    <task id="LOCAL-00002" summary="fix cartella static">
+      <created>1570081831269</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1570081831269</updated>
+    </task>
+    <task id="LOCAL-00003" summary="aggiunto popup su inserimento ok/ko">
+      <created>1570097112091</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1570097112091</updated>
+    </task>
+    <task id="LOCAL-00004" summary="modificate proprieta'popup salvataggio ok/ko">
+      <created>1570103263397</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1570103263397</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="27" width="1920" height="1028" extended-state="0" />
-    <editor active="true" />
+    <frame x="0" y="27" width="1920" height="1148" extended-state="0" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15240642" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1919786" sideWeight="0.4942717" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38857782" sideWeight="0.5088083" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39012584" sideWeight="0.5149733" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290735" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32858709" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33034715" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294509" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2491731" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18441273" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.46362755" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32783705" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32783705" sideWeight="0.91906285" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2486631" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34335595" sideWeight="0.48502675" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16417113" sideWeight="0.5057283" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38857782" sideWeight="0.49119172" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290735" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -635,36 +817,23 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32930845" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31982476" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31910765" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Concurrent Activities Diagram" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294702" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
     </layout>
-    <layout-to-restore>
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38857782" sideWeight="0.5088083" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32858709" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33034715" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294509" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18441273" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18877006" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32930845" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290735" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31982476" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2491731" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Concurrent Activities Diagram" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294702" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38857782" sideWeight="0.49119172" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290735" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="processedProjectFiles" value="true" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -695,6 +864,13 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="su interventi/admin introdotto autocomplete_field su fk_beneficiario&#10;su dispositivi/admin introdotto autocomplete_field su utente&#10;su prestiti/admin introdotto autocomplete_field su fk_utente&#10;su anagrafica/admin aggiunta virgola come separatore lista correlati&#10;inserito nella cartella media il watchdog per il resize automatico dei soli jpg caricati&#10;aggiunto sbarramento antiFragolino (double_click_prevent) su  interventi/admin, anagrafica/admin, dispositivi/admin, prestiti/admin e wiki/admin" />
+    <MESSAGE value="fix cartella static" />
+    <MESSAGE value="aggiunto popup su inserimento ok/ko" />
+    <MESSAGE value="modificate proprieta'popup salvataggio ok/ko" />
+    <option name="LAST_COMMIT_MESSAGE" value="modificate proprieta'popup salvataggio ok/ko" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints-dialog>
@@ -707,7 +883,7 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="7" />
+      <option name="time" value="9" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="Python.DjangoServer">
@@ -716,254 +892,18 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/dispositivi/static/scelta_dispositivo.js.ok">
+    <entry file="file://$PROJECT_DIR$/templates/admin/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state relative-caret-position="-1476">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dispositivi/static/dispositivi_tooltip_init.js">
+    <entry file="file://$PROJECT_DIR$/static.000/tooltipster/dist/css/plugins/tooltipster/sideTip/themes/tooltipster-sideTip-borderless.min.css" />
+    <entry file="file://$PROJECT_DIR$/static.000/ckeditor/ckeditor/skins/light/skin.js" />
+    <entry file="file://$PROJECT_DIR$/dispositivi/static/dispositivi_search_hints.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/interventi/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/popola_modello.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/interventi/apps.py.000">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/prestiti/apps.py.000">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/prestiti/static/prestiti_popola_modello.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/prestiti/static/prestiti_scelta_dispositivo.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="10" column="42" lean-forward="false" selection-start-line="10" selection-start-column="42" selection-end-line="10" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/prestiti/static/prestiti_popola_produttore.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dispositivi/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="23" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dispositivi/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="530">
-          <caret line="47" column="0" lean-forward="false" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dispositivi/fields.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/popola_produttore.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/prestiti/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="23" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/prestiti/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1428">
-          <caret line="115" column="34" lean-forward="false" selection-start-line="115" selection-start-column="18" selection-end-line="115" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gse/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="32" column="14" lean-forward="false" selection-start-line="32" selection-start-column="14" selection-end-line="32" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dispositivi/static/popola_produttore.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="14">
-          <caret line="1" column="14" lean-forward="false" selection-start-line="1" selection-start-column="14" selection-end-line="1" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dispositivi/static/scelta_dispositivo.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="22" column="18" lean-forward="false" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/prestiti/fields.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/prestiti/static/prestiti_hide_consegna.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="5" column="4" lean-forward="false" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="94" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/prestiti/forms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="672">
-          <caret line="60" column="41" lean-forward="false" selection-start-line="60" selection-start-column="41" selection-end-line="60" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/interventi/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="518">
-          <caret line="42" column="0" lean-forward="false" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/interventi/admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="924">
-          <caret line="69" column="0" lean-forward="false" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/admin/css/base.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/admin/css/fonts.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dispositivi/migrations/0020_auto_20180525_1139.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="26" column="57" lean-forward="false" selection-start-line="26" selection-start-column="57" selection-end-line="26" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dispositivi/migrations/0023_auto_20180525_1433.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="26" column="57" lean-forward="false" selection-start-line="26" selection-start-column="57" selection-end-line="26" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gse/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1316">
-          <caret line="94" column="0" lean-forward="false" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dispositivi/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="48" column="46" lean-forward="false" selection-start-line="48" selection-start-column="46" selection-end-line="48" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/prestiti_scelta_dispositivo.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="18" column="14" lean-forward="false" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="56">
-          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/anagrafica/forms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/anagrafica/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/prestiti/templates/prestito.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="12320">
-          <caret line="896" column="106" lean-forward="false" selection-start-line="896" selection-start-column="106" selection-end-line="896" selection-end-column="106" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/anagrafica/templates/admin/anagrafica/change_form.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="924">
-          <caret line="66" column="14" lean-forward="false" selection-start-line="66" selection-start-column="14" selection-end-line="66" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/anagrafica/admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-588">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
@@ -977,6 +917,99 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/dispositivi/templates/admin/dispositivi/change_form.html">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1162">
+          <caret line="83" column="13" lean-forward="true" selection-start-line="83" selection-start-column="13" selection-end-line="83" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/admin/base_site.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="30" column="11" lean-forward="true" selection-start-line="30" selection-start-column="11" selection-end-line="30" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static.000/dispositivi_tooltip_init.js" />
+    <entry file="file://$PROJECT_DIR$/static.000/crea_pdf_prestito.js" />
+    <entry file="file://$PROJECT_DIR$/static.000/contatti_search_hints.js" />
+    <entry file="file://$PROJECT_DIR$/static.000/cambia_modello.js" />
+    <entry file="file://$PROJECT_DIR$/static.000/cambia_location.js" />
+    <entry file="file://$PROJECT_DIR$/static.000/cambia_beneficiario.js" />
+    <entry file="file://$PROJECT_DIR$/static.000/anagrafica_search_hints.js" />
+    <entry file="file://$PROJECT_DIR$/media/comprimi.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static.000/dispositivi_tooltip.js" />
+    <entry file="file://$PROJECT_DIR$/static.000/double_click_prevent.js" />
+    <entry file="file://$PROJECT_DIR$/interventi/static/cambia_beneficiario.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interventi/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interventi/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/prestiti/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="366">
+          <caret line="210" column="36" lean-forward="false" selection-start-line="210" selection-start-column="36" selection-end-line="210" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/changelog">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="6" column="144" lean-forward="true" selection-start-line="6" selection-start-column="144" selection-end-line="6" selection-end-column="144" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wiki/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="22" column="21" lean-forward="false" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/foto/avvio.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/anagrafica/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/anagrafica/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2422">
+          <caret line="182" column="33" lean-forward="false" selection-start-line="181" selection-start-column="2" selection-end-line="184" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/anagrafica/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
@@ -984,109 +1017,175 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/dispositivi/forms.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="28">
-          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dispositivi/toolbox.py">
+    <entry file="file://$PROJECT_DIR$/staticroot/admin/css/base.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1190">
-          <caret line="90" column="13" lean-forward="false" selection-start-line="90" selection-start-column="13" selection-end-line="90" selection-end-column="13" />
+        <state relative-caret-position="-3108">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/prestiti/static/prestiti_scelta_produttore.js">
+    <entry file="file://$PROJECT_DIR$/static.000/admin/css/base.css" />
+    <entry file="file://$PROJECT_DIR$/dispositivi/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="13" column="18" lean-forward="false" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
+        <state relative-caret-position="-238">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/prestiti/admin.py">
+    <entry file="file://$PROJECT_DIR$/static/admin/css/base.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="644">
-          <caret line="140" column="47" lean-forward="false" selection-start-line="140" selection-start-column="47" selection-end-line="140" selection-end-column="47" />
-          <folding />
+        <state relative-caret-position="-2436">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/prestiti/static/prestiti_hide_ritiro.js">
+    <entry file="file://$PROJECT_DIR$/static/double_click_prevent_input_addanother.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="14" selection-end-column="18" />
-          <folding />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dispositivi/static/popola_modello.js">
+    <entry file="file://$PROJECT_DIR$/static/double_click_prevent_input_continue.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/double_click_prevent_input.default.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="30" column="8" lean-forward="false" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interventi/static/double_click_prevent_input.default.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="98">
+          <caret line="24" column="44" lean-forward="false" selection-start-line="24" selection-start-column="44" selection-end-line="24" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interventi/static/double_click_prevent_input_addanother.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="50" column="0" lean-forward="false" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interventi/static/double_click_prevent_input_continue.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="42" column="51" lean-forward="false" selection-start-line="42" selection-start-column="51" selection-end-line="42" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interventi/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="798">
+          <caret line="60" column="45" lean-forward="false" selection-start-line="60" selection-start-column="45" selection-end-line="60" selection-end-column="45" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dispositivi/admin.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="14">
-          <caret line="38" column="27" lean-forward="false" selection-start-line="38" selection-start-column="27" selection-end-line="38" selection-end-column="27" />
-          <folding />
+        <state relative-caret-position="1848">
+          <caret line="143" column="61" lean-forward="false" selection-start-line="143" selection-start-column="61" selection-end-line="143" selection-end-column="61" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/prestiti/models.py">
+    <entry file="file://$PROJECT_DIR$/templates/admin/base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="778">
-          <caret line="235" column="43" lean-forward="false" selection-start-line="235" selection-start-column="43" selection-end-line="235" selection-end-column="43" />
+        <state relative-caret-position="896">
+          <caret line="64" column="65" lean-forward="false" selection-start-line="64" selection-start-column="65" selection-end-line="64" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interventi/static/popup_after_click.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="28">
+          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
           <folding>
-            <marker date="1531141225242" expanded="true" signature="7748:7851" ph="UPDATE prest... " />
-            <marker date="1531141225242" expanded="true" signature="7902:8005" ph="UPDATE prest... " />
-            <marker date="1531141225242" expanded="true" signature="8518:8618" ph="UPDATE prest... " />
-            <marker date="1531141225242" expanded="true" signature="8666:8766" ph="UPDATE prest... " />
+            <element signature="e#0#41#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dispositivi/static/scelta_produttore.js">
+    <entry file="file://$PROJECT_DIR$/static/dispositivi_tooltip_init.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="56">
-          <caret line="4" column="21" lean-forward="false" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="21" />
+        <state relative-caret-position="140">
+          <caret line="10" column="46" lean-forward="false" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="46" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dispositivi/static/modelli_search_hints.js">
+    <entry file="file://$PROJECT_DIR$/static/dispositivi_tooltip.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="168">
+          <caret line="12" column="37" lean-forward="false" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/prestiti_tooltip.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="12" column="39" lean-forward="false" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/prestiti_tooltip_init.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="10" column="55" lean-forward="false" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dispositivi/static/dispositivi_tooltip_init.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="10" column="38" lean-forward="false" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="38" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dispositivi/static/dispositivi_tooltip.js">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="392">
+          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/prestiti/static/prestiti_tooltip.js">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
-          <caret line="12" column="72" lean-forward="false" selection-start-line="12" selection-start-column="72" selection-end-line="12" selection-end-column="72" />
+          <caret line="12" column="125" lean-forward="false" selection-start-line="12" selection-start-column="125" selection-end-line="12" selection-end-column="125" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dispositivi/static/dispositivi_search_hints.js">
+    <entry file="file://$PROJECT_DIR$/prestiti/static/prestiti_tooltip_init.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="11" column="18" lean-forward="false" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
+        <state relative-caret-position="140">
+          <caret line="10" column="47" lean-forward="false" selection-start-line="10" selection-start-column="47" selection-end-line="10" selection-end-column="47" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/prestiti/static/prestiti_hide_checkout.js">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="490">
-          <caret line="37" column="0" lean-forward="true" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#41#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="252">
+          <caret line="18" column="38" lean-forward="false" selection-start-line="18" selection-start-column="38" selection-end-line="18" selection-end-column="38" />
+          <folding />
         </state>
       </provider>
     </entry>
